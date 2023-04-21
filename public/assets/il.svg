@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143 85" width="143" height="85">
+	<title>SouthernIllinois</title>
+	<defs>
+		<image  width="143" height="85" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAABVAQMAAABKCCWZAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAABVJREFUeJxjYBgFo2AUjIJRMAooBgAGTwABS7TIHQAAAABJRU5ErkJggg=="/>
+		<image  width="143" height="43" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAAArAQMAAAB7IEkoAAAAAXNSR0IB2cksfwAAAAZQTFRFsiI0siI0dvGAyAAAAAJ0Uk5Tmf/7EhPmAAAAF0lEQVR4nGNgwAT/0cG/UaFRoVEhsBAAuY/xARDQPR0AAAAASUVORK5CYII="/>
+		<image  width="13" height="19" id="img3" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAATCAMAAAB86XelAAAAAXNSR0IB2cksfwAAAUFQTFRFAAAAHKNOG6JNCZo/BJU7FJpHJaZUA5Y6AY84C5lBE55GAJI4AJE4B5U9DJVBAJA4ApQ5EJ5FCpU/AJU4AJY4CpY/HaNPBZU7AJQ4BZk8d8iVgMubGqFMApY5AJE3AZE4HKJOHZ5OCJQ+AJM4DZlCEp5GA5I6BJY7DZxCO65mF51KAZQ4AI83AJc4B5U9IaRSGKFKA5c6AJA3CJk+EJ5EJKZUCpQ/Cpk/E59HC5tAAZc5Bpo9EZ5FGaFLGaBLB5k+BZk8CJo+GJA5TXgxE5M7A5c6A5Q6CptADpxDEp5GkWQzjF4rhGo2GaFLDp1DEp9HMateV7t8QLJrimg1jF0rims4Xr2COK1jFqBJDJxBCJo+CJo+Loc2fmIrQ340CZo/B5o9C5tBE59HFqBJBpo9AJc4CJQ3Eo82CpM3A5g7FJ9IIzYjqQAAAGt0Uk5TAA46a98aFeX+ZmH//7in//hWxP//qB7n/8IBAFL8//ojELn/hC7c104Ce/7//88lLPD/vFYNuOVymv7Cbjx4tJmar/jJ5vCrdzU08Sw1UT8BAgM++DMCAxKjvsHZ/9y9wKoZGrrMzMzMwCTPnqRMAAAAwElEQVR4nGNgAAFGJgYkwMzCiuCwsXNwInhc3Dy8CB4fP4+AIJwnJCzCLQrjiIlzS4hISkE40jKyIiJy8goQnqISN7eyCLcKhKeqJiwsIsetrqEJ4mlp6wgr6+rq6YM4BobcckYi3DzGJqZAnhm3iA63iK4uj7kFA4OlFQ+/rq6uBJCwtmGwtbN3cHRydnF1c/fwhBjr5e3j6+cfAGYHBgWHhIaFg9kRkVHRMbFx8QmJSUBeckpqalp6RmpqZhYDACiaGveOn7TcAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		.s0 { fill: #3c3b6e } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+	<use id="Layer 1" href="#img2" x="0" y="42"/>
+	<path id="V" class="s0" aria-label="V"  d="m117.9-0.1l-16.1-0.1-30.2 69.5-29.7-69.5-16.9-0.1 38.8 85.5h14.9z"/>
+	<use id="Layer 4" href="#img3" x="65" y="24"/>
+</svg>
