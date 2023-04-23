@@ -6,13 +6,13 @@ const Footer = () => {
         <img
           className="w-[50px] h-[30px]"
           src="/assets/il.svg"
-          alt="profile image"
+          alt="illinois flag"
         />
         &copy; {today.getFullYear()} Scott Weaver
         <img
           className="w-[50px] h-[30px]"
           src="/assets/ll.svg"
-          alt="profile image"
+          alt="liberland flag"
         />
       </div>
     </footer>

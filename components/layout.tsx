@@ -17,7 +17,7 @@ const Layout = ({ preview, children }: Props) => {
         <Sidebar />
         <div className="drawer-content flex flex-col bg-base-100">
           <div className="md:flex md:justify-center">
-            <main className="p-6 pt-10 max-w-[900px]">{children}</main>
+            <main className="p-1 pt-10 max-w-[1080px]">{children}</main>
           </div>
           <Footer />
         </div>
