@@ -16,7 +16,7 @@ const Layout = ({ preview, children }: Props) => {
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <Sidebar />
         <div className="drawer-content flex flex-col bg-base-100">
-          <div className="md:flex md:justify-center">
+          <div className="md:flex md:justify-center overflow-x-hidden">
             <main className="p-1 pt-10">{children}</main>
           </div>
           <Footer />
