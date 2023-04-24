@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scroll-bar::-webkit-scrollbar-track {
+  @apply bg-base-200 rounded-sm w-1;
+}
+
+.scroll-bar::-webkit-scrollbar {
+  @apply bg-primary rounded-sm w-1;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-sm w-1;
+}
