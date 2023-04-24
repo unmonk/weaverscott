@@ -47,7 +47,7 @@ const Intro = () => {
       <div className="grid-cols-1 object-cover">
         <img
           src="/assets/monk.png"
-          className="hidden md:block z-20 max-w-sm"
+          className="invisible md:visible z-20 max-w-sm"
           alt="monk"
         />
       </div>
