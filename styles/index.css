@@ -7,9 +7,9 @@
 }
 
 .scroll-bar::-webkit-scrollbar {
-  @apply bg-primary rounded-sm w-1;
+  @apply bg-base-200 rounded-sm w-1;
 }
 
 .scroll-bar::-webkit-scrollbar-thumb {
-  @apply bg-primary rounded-sm w-1;
+  @apply bg-accent rounded-sm w-1;
 }
