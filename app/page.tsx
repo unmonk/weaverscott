@@ -5,7 +5,7 @@ import Header from "@/components/header";
 
 export default function Home() {
   return (
-    <div className="p-16 items-center text-center flex-1 justify-between xl:self-center xl:w-3/4">
+    <div className="p-3 md:p-16 items-center text-center flex-1 justify-between xl:self-center xl:w-3/4">
       <Header />
       <section>
         <About />

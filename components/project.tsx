@@ -30,11 +30,11 @@ const Project: FC<ProjectProps> = ({
           {description}
         </p>
       </div>
-      <div className="flex flex-row gap-2 py-1 justify-evenly">
+      <div className="flex flex-col md:flex-row gap-2 py-1 justify-evenly">
         {demo && (
           <Button variant="outline" size="sm" className="rounded-xl" asChild>
             <a href={demo} target="_blank" rel="noopener noreferrer">
-              <ExternalLinkIcon size={15} className="mr-1" />
+              <ExternalLinkIcon size={15} className="mr-1 md:block hidden" />
               <b>Demo</b>
             </a>
           </Button>
@@ -42,7 +42,7 @@ const Project: FC<ProjectProps> = ({
         {external && (
           <Button variant="outline" size="sm" className="rounded-xl" asChild>
             <a href={external} target="_blank" rel="noopener noreferrer">
-              <ExternalLinkIcon size={15} className="mr-1" />
+              <ExternalLinkIcon size={15} className="mr-1 md:block hidden" />
               <b>Link</b>
             </a>
           </Button>
@@ -50,7 +50,7 @@ const Project: FC<ProjectProps> = ({
         {repo && (
           <Button variant="outline" size="sm" className="rounded-xl" asChild>
             <a href={repo} target="_blank" rel="noopener noreferrer">
-              <GithubIcon size={15} className="mr-1" />
+              <GithubIcon size={15} className="mr-1 md:block hidden" />
               <b>Repo</b>
             </a>
           </Button>
@@ -81,7 +81,7 @@ const Project: FC<ProjectProps> = ({
 
 const Projects: FC = () => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2">
+    <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2">
       {projects.map((project) => {
         return <Project project={project} key={project.name} />;
       })}
