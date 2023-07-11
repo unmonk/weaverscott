@@ -3,7 +3,7 @@ import Image from "next/image";
 import { projects, TechList } from "@/lib/consts";
 import { GithubIcon, ExternalLinkIcon } from "lucide-react";
 
-import { cn } from "@/lib/utils";
+import { cn, randomDelay } from "@/lib/utils";
 import { Button } from "./ui/button";
 
 interface ProjectProps {
@@ -35,7 +35,7 @@ const Project: FC<ProjectProps> = ({
           <Button variant="outline" size="sm" className="rounded-xl" asChild>
             <a href={demo} target="_blank" rel="noopener noreferrer">
               <ExternalLinkIcon size={15} className="mr-1" />
-              Demo
+              <b>Demo</b>
             </a>
           </Button>
         )}
@@ -43,7 +43,7 @@ const Project: FC<ProjectProps> = ({
           <Button variant="outline" size="sm" className="rounded-xl" asChild>
             <a href={external} target="_blank" rel="noopener noreferrer">
               <ExternalLinkIcon size={15} className="mr-1" />
-              Link
+              <b>Link</b>
             </a>
           </Button>
         )}
@@ -51,16 +51,16 @@ const Project: FC<ProjectProps> = ({
           <Button variant="outline" size="sm" className="rounded-xl" asChild>
             <a href={repo} target="_blank" rel="noopener noreferrer">
               <GithubIcon size={15} className="mr-1" />
-              Repo
+              <b>Repo</b>
             </a>
           </Button>
         )}
       </div>
       <div>
         <div className="flex flex-row gap-1 flex-wrap justify-center items-center w-full p-2">
-          {techStack.map((tech, index) => {
+          {techStack.map((tech) => {
             const stackItem = TechList.find((item) => item.name === tech);
-            const delay = `delay-${index * 100}`;
+            const delay = randomDelay();
             if (!stackItem) return null;
             return (
               <Image

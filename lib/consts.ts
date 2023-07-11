@@ -1,3 +1,16 @@
+export const employers = [
+  {
+    name: "Liberty Mutual",
+    title: "Software Engineer II",
+    dateStart: "01/2016",
+    dateEnd: "08/2018",
+    description: "",
+    logo: "",
+    link: "https://www.libertymutual.com/",
+    tech: [],
+  },
+];
+
 export const TechList = [
   {
     name: "React",

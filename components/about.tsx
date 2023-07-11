@@ -29,7 +29,7 @@ const About: FC<AboutProps> = ({}) => {
         <div className="order-2 md:order-4 border rounded-xl col-span-3">
           {/* About me area */}
           {aboutMeParagraphs.map((paragraph) => (
-            <p className="text-left p-4" key={paragraph}>
+            <p className="text-left p-4 font-semibold" key={paragraph}>
               {paragraph}
             </p>
           ))}
