@@ -1,20 +1,13 @@
-const Footer = () => {
-  const today = new Date();
+import { FC } from "react";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
+
+interface FooterProps {}
+
+const Footer: FC<FooterProps> = ({}) => {
   return (
-    <footer className="footer footer-center block mb-5 pt-10">
-      <div className="pb-2 flex flex-row justify-center">
-        <img
-          className="w-[50px] h-[30px]"
-          src="/assets/il.svg"
-          alt="illinois flag"
-        />
-        &copy; {today.getFullYear()} Scott Weaver
-        <img
-          className="w-[50px] h-[30px]"
-          src="/assets/ll.svg"
-          alt="liberland flag"
-        />
-      </div>
+    <footer className="flex flex-row items-center justify-end w-full p-2 border-t border-gray-200 dark:border-gray-800 gap-2">
+      Scott Weaver &copy; {new Date().getFullYear()}
+      <ThemeToggle />
     </footer>
   );
 };
