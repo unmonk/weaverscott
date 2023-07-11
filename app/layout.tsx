@@ -2,6 +2,7 @@ import "./globals.css";
 import { Roboto, Raleway } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Raleway({
   subsets: ["latin-ext"],
@@ -25,6 +26,7 @@ export default function RootLayout({
           <main className="flex min-h-screen flex-col">
             {children}
             <Footer />
+            <Analytics />
           </main>
         </ThemeProvider>
       </body>
