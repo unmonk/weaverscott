@@ -19,7 +19,7 @@ const Socials: FC<SocialsProps> = ({}) => {
             alt="Github"
             width={40}
             height={40}
-            className="mr-2 h-10 w-10"
+            className="mr-2 h-10 w-10 p-0.5"
           />
           <span className="text-lg">Github</span>
         </a>
@@ -36,7 +36,7 @@ const Socials: FC<SocialsProps> = ({}) => {
             alt="LinkedIn"
             width={40}
             height={40}
-            className="mr-2 h-10 w-10"
+            className="mr-2 h-10 w-10 p-0.5"
           />
           <span className="text-lg">LinkedIn</span>
         </a>
@@ -44,7 +44,7 @@ const Socials: FC<SocialsProps> = ({}) => {
 
       <Button variant="outline" className="rounded-xl  p-1" asChild>
         <a href="/ScottWeaverResume.pdf" download>
-          <DownloadIcon className="mr-2 h-10 w-10" color="black" />
+          <DownloadIcon className="mr-2 h-10 w-10 p-0.5" color="black" />
           <span className="text-lg">Resume</span>
         </a>
       </Button>

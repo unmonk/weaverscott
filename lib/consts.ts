@@ -197,22 +197,4 @@ export const projects = [
     repo: "https://github.com/StonefortSolutions/capstone",
     external: null,
   },
-  {
-    name: "Formula Manager",
-    description: "todo",
-    techStack: ["Electron", "MSSQL", "Node.js", "DotNet Core"],
-    image: "/yoshi.png",
-    demo: null,
-    repo: null,
-    external: null,
-  },
-  {
-    name: "Integrations Flow",
-    description: "todo.",
-    techStack: ["Kafka", "Nest.js", "C#"],
-    image: "/yoshi.png",
-    demo: null,
-    repo: null,
-    external: null,
-  },
 ];

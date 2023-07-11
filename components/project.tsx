@@ -22,7 +22,7 @@ const Project: FC<ProjectProps> = ({
 }) => {
   return (
     <div className="border rounded-xl col-span-1 flex flex-col">
-      <div className="w-full min-h-8 overflow-ellipsis p-2">
+      <div className="w-full h-16 overflow-ellipsis p-2">
         <h3 className="text-xl font-semibold">{name}</h3>
       </div>
       <div className="flex flex-1">
