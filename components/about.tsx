@@ -7,7 +7,7 @@ interface AboutProps {}
 const About: FC<AboutProps> = ({}) => {
   return (
     <section>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-1">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
         <h2 className="hidden md:block md:order-1 col-span-1 text-xl  font-semibold">
           Preferred Tech
         </h2>

@@ -1,20 +1,29 @@
 import { FC } from "react";
 import Image from "next/image";
-import { Card, CardHeader, CardFooter, CardTitle } from "./ui/card";
-import { projects } from "@/lib/consts";
+import {
+  Card,
+  CardHeader,
+  CardFooter,
+  CardTitle,
+  CardContent,
+  CardDescription,
+} from "./ui/card";
+import { projects, TechList } from "@/lib/consts";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
+import { cn } from "@/lib/utils";
 
 interface ProjectProps {
   project: {
     name: string;
     description: string;
     link: string;
+    techStack: string[];
   };
 }
 
 const Project: FC<ProjectProps> = ({
-  project: { name, description, link },
+  project: { name, description, link, techStack },
 }) => {
   return (
     <Card className="rounded-xl col-span-1">
@@ -24,52 +33,29 @@ const Project: FC<ProjectProps> = ({
             <h3>{name}</h3>
           </a>
         </CardTitle>
-
+      </CardHeader>
+      <CardDescription className="p-2">
         <p className="text-sm text-start text-muted-foreground">
           {description}
         </p>
-      </CardHeader>
+      </CardDescription>
       <CardFooter>
-        <div className="flex flex-row gap-1 flex-wrap align-middle items-center">
-          <Image
-            src={
-              "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-            }
-            alt={"test"}
-            width={20}
-            height={20}
-            className="animate-bounce delay-100"
-          />
-
-          <Image
-            src={
-              "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-            }
-            alt={"test"}
-            width={20}
-            height={20}
-            className="animate-bounce delay-200"
-          />
-
-          <Image
-            src={
-              "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-            }
-            alt={"test"}
-            width={20}
-            height={20}
-            className="animate-bounce delay-300"
-          />
-
-          <Image
-            src={
-              "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-            }
-            alt={"test"}
-            width={20}
-            height={20}
-            className="animate-bounce delay-400"
-          />
+        <div className="flex flex-row gap-1 flex-wrap align-middle items-center w-full">
+          {techStack.map((tech, index) => {
+            const stackItem = TechList.find((item) => item.name === tech);
+            const delay = `delay-${index * 100}`;
+            if (!stackItem) return null;
+            return (
+              <Image
+                src={stackItem.icon}
+                alt={stackItem.name}
+                width={20}
+                height={20}
+                className={cn("animate-bounce", delay)}
+                key={stackItem.name}
+              />
+            );
+          })}
         </div>
       </CardFooter>
     </Card>
