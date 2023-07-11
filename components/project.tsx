@@ -1,19 +1,24 @@
 import { FC } from "react";
 import Image from "next/image";
 import { projects, TechList } from "@/lib/consts";
+import { GithubIcon, ExternalLinkIcon } from "lucide-react";
 
 import { cn } from "@/lib/utils";
+import { Button } from "./ui/button";
 
 interface ProjectProps {
   project: {
     name: string;
     description: string;
     techStack: string[];
+    demo: string | null;
+    repo: string | null;
+    external: string | null;
   };
 }
 
 const Project: FC<ProjectProps> = ({
-  project: { name, description, techStack },
+  project: { name, description, techStack, demo, repo, external },
 }) => {
   return (
     <div className="border rounded-xl col-span-1 flex flex-col">
@@ -24,6 +29,32 @@ const Project: FC<ProjectProps> = ({
         <p className="text-sm text-start text-muted-foreground p-2">
           {description}
         </p>
+      </div>
+      <div className="flex flex-row gap-2 py-1 justify-evenly">
+        {demo && (
+          <Button variant="outline" size="sm" className="rounded-xl" asChild>
+            <a href={demo} target="_blank" rel="noopener noreferrer">
+              <ExternalLinkIcon size={15} className="mr-1" />
+              Demo
+            </a>
+          </Button>
+        )}
+        {external && (
+          <Button variant="outline" size="sm" className="rounded-xl" asChild>
+            <a href={external} target="_blank" rel="noopener noreferrer">
+              <ExternalLinkIcon size={15} className="mr-1" />
+              Link
+            </a>
+          </Button>
+        )}
+        {repo && (
+          <Button variant="outline" size="sm" className="rounded-xl" asChild>
+            <a href={repo} target="_blank" rel="noopener noreferrer">
+              <GithubIcon size={15} className="mr-1" />
+              Repo
+            </a>
+          </Button>
+        )}
       </div>
       <div>
         <div className="flex flex-row gap-1 flex-wrap justify-center items-center w-full p-2">

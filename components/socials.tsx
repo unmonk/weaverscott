@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { GithubIcon, LinkedinIcon, DownloadIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 interface SocialsProps {}
 
@@ -13,7 +14,13 @@ const Socials: FC<SocialsProps> = ({}) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <GithubIcon className="mr-2 h-10 w-10" />
+          <Image
+            src="/icons/github-original.svg"
+            alt="Github"
+            width={40}
+            height={40}
+            className="mr-2 h-10 w-10"
+          />
           <span className="text-lg">Github</span>
         </a>
       </Button>
@@ -24,14 +31,20 @@ const Socials: FC<SocialsProps> = ({}) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <LinkedinIcon className="mr-2 h-10 w-10" />
+          <Image
+            src="/icons/linkedin-original.svg"
+            alt="LinkedIn"
+            width={40}
+            height={40}
+            className="mr-2 h-10 w-10"
+          />
           <span className="text-lg">LinkedIn</span>
         </a>
       </Button>
 
       <Button variant="outline" className="rounded-xl  p-1" asChild>
         <a href="/ScottWeaverResume.pdf" download>
-          <DownloadIcon className="mr-2 h-10 w-10" />
+          <DownloadIcon className="mr-2 h-10 w-10" color="black" />
           <span className="text-lg">Resume</span>
         </a>
       </Button>
