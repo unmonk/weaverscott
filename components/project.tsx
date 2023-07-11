@@ -1,33 +1,23 @@
 import { FC } from "react";
 import Image from "next/image";
-import {
-  Card,
-  CardHeader,
-  CardFooter,
-  CardTitle,
-  CardContent,
-  CardDescription,
-} from "./ui/card";
 import { projects, TechList } from "@/lib/consts";
-import { Button } from "./ui/button";
-import { Badge } from "./ui/badge";
+
 import { cn } from "@/lib/utils";
 
 interface ProjectProps {
   project: {
     name: string;
     description: string;
-    link: string;
     techStack: string[];
   };
 }
 
 const Project: FC<ProjectProps> = ({
-  project: { name, description, link, techStack },
+  project: { name, description, techStack },
 }) => {
   return (
     <div className="border rounded-xl col-span-1 flex flex-col">
-      <div className="w-full h-8 overflow-ellipsis p-2">
+      <div className="w-full min-h-8 overflow-ellipsis p-2">
         <h3 className="text-xl font-semibold">{name}</h3>
       </div>
       <div className="flex flex-1">
@@ -55,23 +45,6 @@ const Project: FC<ProjectProps> = ({
         </div>
       </div>
     </div>
-    // <Card className="rounded-xl col-span-1">
-    //   <CardHeader>
-    //     <CardTitle>
-    //       <a href={link} target="_blank" rel="noopener noreferrer">
-    //         <h3>{name}</h3>
-    //       </a>
-    //     </CardTitle>
-    //   </CardHeader>
-    //   <CardContent className="p-2">
-    //     <p className="text-sm text-start text-muted-foreground">
-    //       {description}
-    //     </p>
-    //   </CardContent>
-    //   <CardFooter>
-
-    //   </CardFooter>
-    // </Card>
   );
 };
 

@@ -129,7 +129,7 @@ export const projects = [
   {
     name: "Streaks",
     description:
-      "An open source clone of the ESPN Streak for the cash application from the late 2000s. Powered by a library I maintian called SportsDataVerse.",
+      "An open source clone of the ESPN Streak for the cash application from the late 2000s. Cron jobs keep scores and statuses up to date. Powered by a library I maintian called SportsDataVerse.",
     techStack: ["Next.js", "Tailwind CSS", "PostgreSQL", "Vercel"],
     image: "/yoshi.png",
     link: "",
@@ -137,15 +137,8 @@ export const projects = [
   {
     name: "Merc Chan",
     description:
-      "A starter kit for SaaS applications. Built with Next.js, Tailwind CSS, and PostgreSQL.",
+      "Merc Chan is a multipurpose discord bot serving thousands of users. Tools range from moderation, community engagement, and creative production. Has access to the OpenAI API.",
     techStack: ["Discord.js", "Node.js", "MongoDB", "OpenAI"],
-    image: "/yoshi.png",
-    link: "",
-  },
-  {
-    name: "FloorPlanner",
-    description: "3D Floor planning application built with Three.js and React.",
-    techStack: ["Three.js", "Express", "PostgreSQL", "React", "Redux"],
     image: "/yoshi.png",
     link: "",
   },
@@ -166,17 +159,22 @@ export const projects = [
     link: "https://www.npmjs.com/package/sportsdataverse",
   },
   {
+    name: "FloorPlanner",
+    description: "3D Floor planning application built with Three.js and React.",
+    techStack: ["Three.js", "Express", "PostgreSQL", "React", "Redux"],
+    image: "/yoshi.png",
+    link: "",
+  },
+  {
     name: "Dummy Project",
-    description:
-      "A starter kit for SaaS applications. Built with Next.js, Tailwind CSS, and PostgreSQL.",
+    description: "Built with Next.js, Tailwind CSS, and PostgreSQL.",
     techStack: ["Next.js", "Tailwind CSS", "PostgreSQL"],
     image: "/yoshi.png",
     link: "",
   },
   {
     name: "Dummy Project",
-    description:
-      "A starter kit for SaaS applications. Built with Next.js, Tailwind CSS, and PostgreSQL.",
+    description: "Built with Next.js, Tailwind CSS, and PostgreSQL.",
     techStack: ["Next.js", "Tailwind CSS", "PostgreSQL"],
     image: "/yoshi.png",
     link: "",
