@@ -15,14 +15,11 @@ const Techstack: FC<TechstackProps> = ({ stack }) => {
     <>
       {stack.map((tech) => {
         return (
-          <div
-            className={
-              "border rounded-xl flex flex-row items-center justify-center"
-            }
-            key={tech.name}
-          >
-            <Image src={tech.icon} alt={tech.name} width={50} height={50} />
-            <span className="ml-2">{tech.name}</span>
+          <div className="border rounded-xl" key={tech.name}>
+            <div className="flex flex-row items-center justify-between px-3 py-1">
+              <Image src={tech.icon} alt={tech.name} width={40} height={40} />
+              <p className="ml-2 text-lg">{tech.name}</p>
+            </div>
           </div>
         );
       })}
