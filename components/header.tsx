@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import Socials from "@/components/socials";
+import { randomTitle } from "@/lib/utils";
 
 interface HeaderProps {}
 
@@ -15,7 +16,7 @@ const Header: FC<HeaderProps> = ({}) => {
           </Avatar>
           <div>
             <h1 className="text-6xl font-bold">Scott Weaver</h1>
-            <p className="text-2xl">Software Engineer</p>
+            <p className="text-2xl">{randomTitle()}</p>
           </div>
         </div>
       </section>
