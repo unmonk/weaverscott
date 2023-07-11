@@ -15,16 +15,12 @@ export function randomDelay() {
 
 export function randomTitle() {
   const titles = [
-    "Software Engineer",
     "Senior Software Engineer",
-    "Software Developer",
     "Senior Software Developer",
     "Engineering Leader",
     "Software Engineering Manager",
     "Engineering Cat Dad",
     "Developer of Things",
-    "Halo Champion",
-    "Your mom's favorite developer",
   ];
 
   const randomIndex = Math.floor(Math.random() * titles.length);
