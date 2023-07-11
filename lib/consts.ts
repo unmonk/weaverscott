@@ -1,33 +1,33 @@
 export const techStack = [
   {
     name: "React",
-    icon: "/icons/react.svg",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     color: "#61DAFB",
   },
   {
     name: "Next.js",
-    icon: "/icons/nextdotjs.svg",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
     color: "#000000",
   },
   {
     name: "Node.js",
-    icon: "/icons/nodedotjs.svg",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     color: "#339933",
   },
   {
     name: "Tailwind CSS",
-    icon: "/icons/tailwindcss.svg",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
     color: "#06B6D4",
   },
   {
     name: "PostgreSQL",
-    icon: "/icons/postgresql.svg",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
     color: "#4169E1",
   },
   {
     name: "Vercel",
     icon: "/icons/vercel.svg",
-    color: "#000000",
+    color: "text-red-500",
   },
 ];
 
@@ -45,4 +45,71 @@ export const aboutMeParagraphs = [
             good products.`,
   `I’m looking to continue growing as a people leader
             and develop great applications. Send me a message!`,
+];
+
+export const projects = [
+  {
+    name: "SaaS Starter Kit",
+    description:
+      "A starter kit for SaaS applications. Built with Next.js, Tailwind CSS, and PostgreSQL.",
+    techStack: ["Next.js", "Tailwind CSS", "PostgreSQL"],
+    image: "/yoshi.png",
+    link: "",
+  },
+  {
+    name: "SaaS Starter Kit",
+    description:
+      "A starter kit for SaaS applications. Built with Next.js, Tailwind CSS, and PostgreSQL.",
+    techStack: ["Next.js", "Tailwind CSS", "PostgreSQL"],
+    image: "/yoshi.png",
+    link: "",
+  },
+  {
+    name: "SaaS Starter Kit",
+    description:
+      "A starter kit for SaaS applications. Built with Next.js, Tailwind CSS, and PostgreSQL.",
+    techStack: ["Next.js", "Tailwind CSS", "PostgreSQL"],
+    image: "/yoshi.png",
+    link: "",
+  },
+  {
+    name: "SaaS Starter Kit",
+    description:
+      "A starter kit for SaaS applications. Built with Next.js, Tailwind CSS, and PostgreSQL.",
+    techStack: ["Next.js", "Tailwind CSS", "PostgreSQL"],
+    image: "/yoshi.png",
+    link: "",
+  },
+  {
+    name: "SaaS Starter Kit",
+    description:
+      "A starter kit for SaaS applications. Built with Next.js, Tailwind CSS, and PostgreSQL.",
+    techStack: ["Next.js", "Tailwind CSS", "PostgreSQL"],
+    image: "/yoshi.png",
+    link: "",
+  },
+  {
+    name: "SaaS Starter Kit",
+    description:
+      "A starter kit for SaaS applications. Built with Next.js, Tailwind CSS, and PostgreSQL.",
+    techStack: ["Next.js", "Tailwind CSS", "PostgreSQL"],
+    image: "/yoshi.png",
+    link: "",
+  },
+  {
+    name: "SaaS Starter Kit",
+    description:
+      "A starter kit for SaaS applications. Built with Next.js, Tailwind CSS, and PostgreSQL.",
+    techStack: ["Next.js", "Tailwind CSS", "PostgreSQL"],
+    image: "/yoshi.png",
+    link: "",
+  },
+  {
+    name: "SaaS Starter Kit",
+    description:
+      "A starter kit for SaaS applications. Built with Next.js, Tailwind CSS, and PostgreSQL.",
+    techStack: ["Next.js", "Tailwind CSS", "PostgreSQL"],
+    image: "/yoshi.png",
+    link: "",
+  },
 ];

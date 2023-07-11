@@ -1,9 +1,12 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Roboto, Raleway } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Raleway({
+  subsets: ["latin-ext"],
+  weight: "400",
+});
 
 export const metadata = {
   title: "Scott Weaver",
