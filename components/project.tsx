@@ -26,21 +26,17 @@ const Project: FC<ProjectProps> = ({
   project: { name, description, link, techStack },
 }) => {
   return (
-    <Card className="rounded-xl col-span-1">
-      <CardHeader>
-        <CardTitle>
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            <h3>{name}</h3>
-          </a>
-        </CardTitle>
-      </CardHeader>
-      <CardDescription className="p-2">
-        <p className="text-sm text-start text-muted-foreground">
+    <div className="border rounded-xl col-span-1 flex flex-col">
+      <div className="w-full h-8 overflow-ellipsis p-2">
+        <h3 className="text-xl font-semibold">{name}</h3>
+      </div>
+      <div className="flex flex-1">
+        <p className="text-sm text-start text-muted-foreground p-2">
           {description}
         </p>
-      </CardDescription>
-      <CardFooter>
-        <div className="flex flex-row gap-1 flex-wrap align-middle items-center w-full">
+      </div>
+      <div>
+        <div className="flex flex-row gap-1 flex-wrap justify-center items-center w-full p-2">
           {techStack.map((tech, index) => {
             const stackItem = TechList.find((item) => item.name === tech);
             const delay = `delay-${index * 100}`;
@@ -57,8 +53,25 @@ const Project: FC<ProjectProps> = ({
             );
           })}
         </div>
-      </CardFooter>
-    </Card>
+      </div>
+    </div>
+    // <Card className="rounded-xl col-span-1">
+    //   <CardHeader>
+    //     <CardTitle>
+    //       <a href={link} target="_blank" rel="noopener noreferrer">
+    //         <h3>{name}</h3>
+    //       </a>
+    //     </CardTitle>
+    //   </CardHeader>
+    //   <CardContent className="p-2">
+    //     <p className="text-sm text-start text-muted-foreground">
+    //       {description}
+    //     </p>
+    //   </CardContent>
+    //   <CardFooter>
+
+    //   </CardFooter>
+    // </Card>
   );
 };
 

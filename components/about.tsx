@@ -1,10 +1,18 @@
 import { FC } from "react";
 import Techstack from "./techstack";
-import { techStack, aboutMeParagraphs } from "@/lib/consts";
+import { aboutMeParagraphs } from "@/lib/consts";
 
 interface AboutProps {}
 
 const About: FC<AboutProps> = ({}) => {
+  const FavoriteTech = [
+    "React",
+    "Next.js",
+    "TailwindCSS",
+    "PostgreSQL",
+    "Vercel",
+    "Javascript",
+  ];
   return (
     <section>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
@@ -16,7 +24,7 @@ const About: FC<AboutProps> = ({}) => {
         </h2>
         <div className="order-4 hidden md:flex md:order-3 col-span-1  flex-col gap-2">
           {/* Tech Stack List */}
-          <Techstack stack={techStack} />
+          <Techstack stack={FavoriteTech} />
         </div>
         <div className="order-2 md:order-4 border rounded-xl col-span-3">
           {/* About me area */}
