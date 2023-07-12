@@ -22,18 +22,23 @@ const Navbar: FC<NavbarProps> = ({}) => {
       <MenubarMenu>
         <MenubarTrigger className="font-bold">Scott</MenubarTrigger>
         <MenubarContent>
-          <MenubarItem>Go Home</MenubarItem>
+          <MenubarItem asChild className="cursor-pointer">
+            <a href="/">Go Home</a>
+          </MenubarItem>
+
           <MenubarItem>Contact Me</MenubarItem>
         </MenubarContent>
       </MenubarMenu>
       <MenubarMenu>
         <MenubarTrigger>CV | Resume</MenubarTrigger>
         <MenubarContent>
-          <MenubarItem>
-            Download (PDF)
-            <MenubarShortcut>
-              <DownloadIcon size={15} />
-            </MenubarShortcut>
+          <MenubarItem asChild className="cursor-pointer">
+            <a href="/ScottWeaverResume.pdf" download>
+              Download (PDF)
+              <MenubarShortcut>
+                <DownloadIcon size={15} />
+              </MenubarShortcut>
+            </a>
           </MenubarItem>
           <MenubarItem>View</MenubarItem>
           <MenubarSub>
@@ -88,6 +93,12 @@ const Navbar: FC<NavbarProps> = ({}) => {
       </MenubarMenu>
       <MenubarMenu>
         <MenubarTrigger>Art</MenubarTrigger>
+        <MenubarContent>
+          <MenubarItem>Coming Soon</MenubarItem>
+        </MenubarContent>
+      </MenubarMenu>
+      <MenubarMenu>
+        <MenubarTrigger>Blog</MenubarTrigger>
         <MenubarContent>
           <MenubarItem>Coming Soon</MenubarItem>
         </MenubarContent>
