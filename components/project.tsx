@@ -1,20 +1,13 @@
 import { FC } from "react";
 import Image from "next/image";
-import { projects, TechList } from "@/lib/consts";
+import { projects, TechList, Project } from "@/lib/consts";
 import { GithubIcon, ExternalLinkIcon } from "lucide-react";
 
 import { cn, randomDelay } from "@/lib/utils";
 import { Button } from "./ui/button";
 
 interface ProjectProps {
-  project: {
-    name: string;
-    description: string;
-    techStack: string[];
-    demo: string | null;
-    repo: string | null;
-    external: string | null;
-  };
+  project: Project;
 }
 
 const Project: FC<ProjectProps> = ({

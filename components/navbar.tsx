@@ -12,6 +12,7 @@ import {
   MenubarSubContent,
 } from "./ui/menubar";
 import { DownloadIcon } from "lucide-react";
+import { employers, organizations, education } from "@/lib/consts";
 
 interface NavbarProps {}
 
@@ -38,36 +39,43 @@ const Navbar: FC<NavbarProps> = ({}) => {
           <MenubarSub>
             <MenubarSubTrigger>Employers</MenubarSubTrigger>
             <MenubarSubContent>
-              <MenubarItem>
-                Spot
-                <MenubarShortcut>2023</MenubarShortcut>
-              </MenubarItem>
-              <MenubarItem>
-                Olive
-                <MenubarShortcut>2022</MenubarShortcut>
-              </MenubarItem>
-              <MenubarItem>
-                Innovate Softworks
-                <MenubarShortcut>2020</MenubarShortcut>
-              </MenubarItem>
-              <MenubarItem>
-                Liberty Mutual
-                <MenubarShortcut>2018</MenubarShortcut>
-              </MenubarItem>
+              {employers.map((employer) => (
+                <MenubarItem
+                  key={employer.name}
+                  className={employer.link ? "cursor-pointer" : ""}
+                  asChild
+                >
+                  <a
+                    href={employer.link ?? "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {employer.name}
+                    <MenubarShortcut>{employer.navYear}</MenubarShortcut>
+                  </a>
+                </MenubarItem>
+              ))}
             </MenubarSubContent>
           </MenubarSub>
           <MenubarSub>
             <MenubarSubTrigger>Organizations</MenubarSubTrigger>
             <MenubarSubContent>
-              <MenubarItem asChild className="cursor-pointer">
-                <a
-                  href="https://acm.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
+              {organizations.map((organization) => (
+                <MenubarItem
+                  asChild
+                  className="cursor-pointer flex flex-row justify-between"
+                  key={organization.name}
                 >
-                  ACM@SIU <span className="ml-0.5 text-xs">President</span>
-                </a>
-              </MenubarItem>
+                  <a
+                    href={organization.link ?? "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {organization.name}
+                    <span className="ml-0.5 text-xs">{organization.title}</span>
+                  </a>
+                </MenubarItem>
+              ))}
             </MenubarSubContent>
           </MenubarSub>
         </MenubarContent>

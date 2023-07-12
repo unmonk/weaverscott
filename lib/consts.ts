@@ -1,9 +1,52 @@
-export const employers = [
+export const employers: Employer[] = [
+  {
+    name: "Available",
+    title: "Available",
+    dateStart: "Present",
+    dateEnd: "Present",
+    navYear: "Hire Me",
+    description: "",
+    logo: "",
+  },
+  {
+    name: "Spot",
+    title: "Lead Software Engineer",
+    dateStart: "04/2022",
+    dateEnd: "08/2022",
+    navYear: "2022",
+    description: "",
+    logo: "",
+    link: "https://www.getspot.com/",
+    tech: ["Nest.js", "C#", "Kafka"],
+  },
+  {
+    name: "Olive AI",
+    title: "Lead Software Engineer",
+    dateStart: "06/2020",
+    dateEnd: "04/2022",
+    navYear: "2022",
+    description: "",
+    logo: "",
+    link: "https://oliveai.com/",
+    tech: ["Node.js", "Selenium", "OpenCV", "AWS"],
+  },
+  {
+    name: "Innovate Softworks",
+    title: "Software Engineer",
+    dateStart: "08/2018",
+    dateEnd: "06/2020",
+    navYear: "2020",
+    description: "",
+    logo: "",
+    link: "https://innovatesoftworks.com/",
+    tech: ["Electron", "React", "Node.js", "MSSQL", "C#"],
+  },
   {
     name: "Liberty Mutual",
     title: "Software Engineer II",
     dateStart: "01/2016",
     dateEnd: "08/2018",
+    navYear: "2018",
     description: "",
     logo: "",
     link: "https://www.libertymutual.com/",
@@ -11,9 +54,87 @@ export const employers = [
   },
 ];
 
-export const organizations = [];
+export interface Employer {
+  name: string;
+  title: string;
+  dateStart: string;
+  dateEnd: string;
+  description?: string;
+  logo?: string;
+  link?: string;
+  tech?: string[];
+  navYear?: string;
+}
 
-export const education = [
+export const organizations: Organization[] = [
+  {
+    name: "ACM@SIU",
+    title: "President",
+    dateStart: "08/2013",
+    dateEnd: "12/2015",
+    description: "",
+    logo: "",
+    link: "https://github.com/siucacm",
+  },
+  {
+    name: "SalukiLAN",
+    title: "Director",
+    dateStart: "2013",
+    dateEnd: "2015",
+    description:
+      "A Charity LAN party at Southern Illinois University, raising money for the Childs Play Charity.",
+    logo: "",
+    link: "https://www.facebook.com/SalukiLAN/",
+  },
+  {
+    name: "OpenSpace",
+    title: "Director",
+    dateStart: "01/2014",
+    dateEnd: "01/2015",
+    description: "A local hackerspace open to the public in Murphysboro, IL.",
+    logo: "",
+    link: "https://thesouthern.com/news/local/openspaces-demonstrates-use-of-new-creative-space/article_7ef33585-62e9-5639-9875-569711bb28a9.html",
+  },
+  {
+    name: "HackSI",
+    title: "Volunteer",
+    dateStart: "2013",
+    dateEnd: "2014",
+    description: "A hackathon in Southern Illinois.",
+    logo: "",
+    link: "https://hacksi.org/",
+  },
+  {
+    name: "Mercs",
+    title: "Commander",
+    dateStart: "08/2010",
+    dateEnd: "Present",
+    description: "",
+    logo: "",
+    link: "https://mercsclan.com/",
+  },
+  {
+    name: "Operation Code",
+    title: "Member",
+    dateStart: "2016",
+    dateEnd: "Present",
+    description: "",
+    logo: "",
+    link: "https://operationcode.org/",
+  },
+];
+
+export interface Organization {
+  name: string;
+  title: string;
+  dateStart: string;
+  dateEnd: string;
+  description?: string;
+  logo?: string;
+  link?: string;
+}
+
+export const education: Education[] = [
   {
     name: "Southern Illinois University",
     appreviation: "SIU",
@@ -35,6 +156,22 @@ export const education = [
     link: "https://www.mchenry.edu/",
   },
 ];
+
+export interface Education {
+  name: string;
+  appreviation?: string;
+  degree: string;
+  dateStart: string;
+  dateEnd: string;
+  description?: string;
+  logo?: string;
+  link?: string;
+}
+
+export interface Tech {
+  name: string;
+  icon: string;
+}
 
 export const TechList = [
   {
@@ -167,15 +304,24 @@ export const aboutMeParagraphs = [
             and develop great applications. Send me a message!`,
 ];
 
-export const projects = [
+export interface Project {
+  name: string;
+  description: string;
+  techStack: string[];
+  image?: string;
+  demo?: string;
+  repo?: string;
+  link?: string;
+  external?: string;
+}
+
+export const projects: Project[] = [
   {
     name: "RightTrack / Highway Hero",
     description:
       "RightTrack is a program that puts you in control of your auto policy savings by evaluating your safe driving habits. Some specific behaviors observed by RightTrack include braking, acceleration, and nighttime driving.",
     techStack: ["Express", "Node.js", "MongoDB", "React"],
     image: "/yoshi.png",
-    demo: null,
-    repo: null,
     external: "https://www.libertymutual.com/righttrack",
   },
   {
@@ -192,7 +338,6 @@ export const projects = [
     image: "/yoshi.png",
     demo: "https://mercstreaks.vercel.app/",
     repo: "https://github.com/unmonk/mercstreaks",
-    external: null,
   },
   {
     name: "Merc Chan",
@@ -200,9 +345,7 @@ export const projects = [
       "Merc Chan is a multipurpose discord bot serving thousands of users. Tools range from moderation, community engagement, and creative production. Has access to the OpenAI API.",
     techStack: ["Discord.js", "Node.js", "MongoDB", "OpenAI"],
     image: "/yoshi.png",
-    demo: null,
     repo: "https://github.com/MercsClan/mercchan",
-    external: null,
   },
   {
     name: "Covid19 Testing",
@@ -210,8 +353,6 @@ export const projects = [
       "Automated time consuming data entry and paper work for time sensitive in person testing. Saved clinicians 50 hours per day in data entry and made the in-person covid testing process up to seven and a half times faster.",
     techStack: ["Selenium", "Node.js", "AWS", "OpenCV"],
     image: "/yoshi.png",
-    demo: null,
-    repo: null,
     external:
       "https://www.prnewswire.com/news-releases/olives-ai-workforce-to-revolutionize-covid-19-testing-at-tufts-medical-center-301139423.html",
   },
@@ -224,7 +365,6 @@ export const projects = [
     link: "https://www.npmjs.com/package/sportsdataverse",
     demo: "https://js.sportsdataverse.org/",
     repo: "https://github.com/sportsdataverse/sportsdataverse-js",
-    external: null,
   },
   {
     name: "FloorPlanner",
@@ -233,6 +373,5 @@ export const projects = [
     image: "/yoshi.png",
     demo: "https://capstone-production-e9d2.up.railway.app/",
     repo: "https://github.com/StonefortSolutions/capstone",
-    external: null,
   },
 ];
