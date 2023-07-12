@@ -22,6 +22,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
         <MenubarTrigger className="font-bold">Scott</MenubarTrigger>
         <MenubarContent>
           <MenubarItem>Go Home</MenubarItem>
+          <MenubarItem>Contact Me</MenubarItem>
         </MenubarContent>
       </MenubarMenu>
       <MenubarMenu>
@@ -58,9 +59,14 @@ const Navbar: FC<NavbarProps> = ({}) => {
           <MenubarSub>
             <MenubarSubTrigger>Organizations</MenubarSubTrigger>
             <MenubarSubContent>
-              <MenubarItem>
-                ACM
-                <MenubarShortcut>President</MenubarShortcut>
+              <MenubarItem asChild className="cursor-pointer">
+                <a
+                  href="https://acm.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ACM@SIU <span className="ml-0.5 text-xs">President</span>
+                </a>
               </MenubarItem>
             </MenubarSubContent>
           </MenubarSub>
@@ -69,25 +75,13 @@ const Navbar: FC<NavbarProps> = ({}) => {
       <MenubarMenu>
         <MenubarTrigger>Projects</MenubarTrigger>
         <MenubarContent>
-          <MenubarItem>
-            Download (PDF)
-            <MenubarShortcut>
-              <DownloadIcon size={15} />
-            </MenubarShortcut>
-          </MenubarItem>
-          <MenubarItem>View</MenubarItem>
+          <MenubarItem>Coming Soon</MenubarItem>
         </MenubarContent>
       </MenubarMenu>
       <MenubarMenu>
         <MenubarTrigger>Art</MenubarTrigger>
         <MenubarContent>
-          <MenubarItem>
-            Download (PDF)
-            <MenubarShortcut>
-              <DownloadIcon size={15} />
-            </MenubarShortcut>
-          </MenubarItem>
-          <MenubarItem>View</MenubarItem>
+          <MenubarItem>Coming Soon</MenubarItem>
         </MenubarContent>
       </MenubarMenu>
     </Menubar>

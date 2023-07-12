@@ -11,6 +11,31 @@ export const employers = [
   },
 ];
 
+export const organizations = [];
+
+export const education = [
+  {
+    name: "Southern Illinois University",
+    appreviation: "SIU",
+    degree: "B.A. Computer Science",
+    dateStart: "08/2012",
+    dateEnd: "12/2015",
+    description: "",
+    logo: "",
+    link: "https://siu.edu/",
+  },
+  {
+    name: "Mchenry County College",
+    appreviation: "MCC",
+    degree: "Certificate Internet Programming",
+    dateStart: "08/2010",
+    dateEnd: "12/2012",
+    description: "",
+    logo: "",
+    link: "https://www.mchenry.edu/",
+  },
+];
+
 export const TechList = [
   {
     name: "React",
