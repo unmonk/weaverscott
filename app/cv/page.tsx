@@ -37,7 +37,7 @@ export default function CVPage() {
               <div
                 key={item.name}
                 className={cn(
-                  "rounded-xl md:w-1/2 overflow-hidden relative w-5/6 h-full",
+                  "rounded-xl md:w-1/2 overflow-hidden relative w-5/6 h-full animate-gradient bg-gradient-to-br dark:from-gray-700 via-background dark:via-background dark:to-slate-700 from-gray-200 to-slate-300",
                   opacityClass,
                   borderClass,
                   backgroundClass
@@ -72,6 +72,7 @@ export default function CVPage() {
           })}
         </div>
       </section>
+
       <section>Employment History</section>
     </div>
   );

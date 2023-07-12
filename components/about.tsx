@@ -16,7 +16,7 @@ const About: FC<AboutProps> = ({}) => {
   return (
     <section>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
-        <h2 className="hidden md:block md:order-1 col-span-1 text-xl  font-semibold">
+        <h2 className="hidden md:block md:order-1 col-span-1 text-xl font-semibold">
           Preferred Tech
         </h2>
         <h2 className="order-1 md:order-2 col-span-3 text-xl font-semibold">
@@ -26,7 +26,7 @@ const About: FC<AboutProps> = ({}) => {
           {/* Tech Stack List */}
           <Techstack stack={FavoriteTech} />
         </div>
-        <div className="order-2 md:order-4 border rounded-xl col-span-3">
+        <div className="order-2 md:order-4 border rounded-xl border-slate-300 col-span-3">
           {/* About me area */}
           {aboutMeParagraphs.map((paragraph) => (
             <p className="text-left p-4 font-semibold" key={paragraph}>

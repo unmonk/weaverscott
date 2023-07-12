@@ -69,10 +69,38 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        tada: {
+          "0%": {
+            transform: "scale3d(1, 1, 1)",
+          },
+          "10%, 20%": {
+            transform: "scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)",
+          },
+          "30%, 50%, 70%, 90%": {
+            transform: "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
+          },
+          "40%, 60%, 80%": {
+            transform: "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)",
+          },
+          "100%": {
+            transform: "scale3d(1, 1, 1)",
+          },
+        },
+        gradient: {
+          "0%, 100%": {
+            "background-position": "0% 50%",
+            "background-size": "400% 400%",
+          },
+          "50%": {
+            "background-position": "100% 50%",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        tada: "tada 1s ease-in-out infinite",
+        gradient: "gradient 10s ease infinite",
       },
     },
   },

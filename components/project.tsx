@@ -12,7 +12,7 @@ const Project: FC<ProjectProps> = ({
   project: { name, description, techStack, demo, repo, external },
 }) => {
   return (
-    <div className="border rounded-xl col-span-1 flex flex-col">
+    <div className="border hover:border-slate-400 border-slate-300  rounded-xl col-span-1 flex flex-col">
       <div className="w-full h-16 overflow-ellipsis p-2">
         <h3 className="text-xl font-semibold">{name}</h3>
       </div>

@@ -12,7 +12,6 @@ const TechIcons: FC<TechIconsProps> = ({ list }) => {
     <div className="flex flex-row gap-1 flex-wrap justify-center items-center w-full p-2">
       {list.map((tech) => {
         const stackItem = TechList.find((item) => item.name === tech);
-        const delay = randomDelay();
         if (!stackItem) return null;
         return (
           <Image
@@ -20,7 +19,7 @@ const TechIcons: FC<TechIconsProps> = ({ list }) => {
             alt={stackItem.name}
             width={20}
             height={20}
-            className={cn("animate-bounce", delay)}
+            className={cn("animate-tada")}
             key={stackItem.name}
           />
         );
