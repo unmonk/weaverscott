@@ -2,6 +2,7 @@ import { FC } from "react";
 import { GithubIcon, LinkedinIcon, DownloadIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import va from "@vercel/analytics";
 
 interface SocialsProps {}
 

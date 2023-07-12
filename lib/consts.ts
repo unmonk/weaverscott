@@ -138,22 +138,26 @@ export const education: Education[] = [
   {
     name: "Southern Illinois University",
     appreviation: "SIU",
-    degree: "B.A. Computer Science",
+    degree: "Bachelors of Computer Science",
     dateStart: "08/2012",
     dateEnd: "12/2015",
     description: "",
-    logo: "",
+    logo: "/images/saluki.png",
     link: "https://siu.edu/",
+    color1: "#720000",
+    color2: "#720000",
   },
   {
     name: "Mchenry County College",
     appreviation: "MCC",
-    degree: "Certificate Internet Programming",
-    dateStart: "08/2010",
-    dateEnd: "12/2012",
+    degree: "Certificate of Internet Programming",
+    dateStart: "08/2008",
+    dateEnd: "08/2010",
     description: "",
-    logo: "",
+    logo: "/images/mcc.png",
     link: "https://www.mchenry.edu/",
+    color1: "#4b3190",
+    color2: "#fdbb30",
   },
 ];
 
@@ -166,6 +170,8 @@ export interface Education {
   description?: string;
   logo?: string;
   link?: string;
+  color1?: string;
+  color2?: string;
 }
 
 export interface Tech {

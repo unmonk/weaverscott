@@ -1,3 +1,4 @@
+"use client";
 import { FC } from "react";
 import {
   Menubar,
@@ -13,10 +14,14 @@ import {
 } from "./ui/menubar";
 import { DownloadIcon } from "lucide-react";
 import { employers, organizations, education } from "@/lib/consts";
+import va from "@vercel/analytics";
 
 interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
+  const onResumeClick = () => {
+    va.track("resume_download");
+  };
   return (
     <Menubar className="rounded-none border-b border-none">
       <MenubarMenu>
@@ -32,7 +37,11 @@ const Navbar: FC<NavbarProps> = ({}) => {
       <MenubarMenu>
         <MenubarTrigger>CV | Resume</MenubarTrigger>
         <MenubarContent>
-          <MenubarItem asChild className="cursor-pointer">
+          <MenubarItem
+            asChild
+            className="cursor-pointer"
+            onClick={onResumeClick}
+          >
             <a href="/ScottWeaverResume.pdf" download>
               Download (PDF)
               <MenubarShortcut>
@@ -51,7 +60,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
                   asChild
                 >
                   <a
-                    href={employer.link ?? "#"}
+                    href={employer.link ?? "/"}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

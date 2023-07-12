@@ -1,10 +1,8 @@
 import { FC } from "react";
-import Image from "next/image";
-import { projects, TechList, Project } from "@/lib/consts";
+import { projects, Project } from "@/lib/consts";
 import { GithubIcon, ExternalLinkIcon } from "lucide-react";
-
-import { cn, randomDelay } from "@/lib/utils";
 import { Button } from "./ui/button";
+import TechIcons from "./TechIcons";
 
 interface ProjectProps {
   project: Project;
@@ -50,23 +48,7 @@ const Project: FC<ProjectProps> = ({
         )}
       </div>
       <div>
-        <div className="flex flex-row gap-1 flex-wrap justify-center items-center w-full p-2">
-          {techStack.map((tech) => {
-            const stackItem = TechList.find((item) => item.name === tech);
-            const delay = randomDelay();
-            if (!stackItem) return null;
-            return (
-              <Image
-                src={stackItem.icon}
-                alt={stackItem.name}
-                width={20}
-                height={20}
-                className={cn("animate-bounce", delay)}
-                key={stackItem.name}
-              />
-            );
-          })}
-        </div>
+        <TechIcons list={techStack} />
       </div>
     </div>
   );
