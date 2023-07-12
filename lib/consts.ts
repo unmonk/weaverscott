@@ -127,7 +127,6 @@ export const organizations: Organization[] = [
 export interface Organization {
   name: string;
   title: string;
-  pm;
   dateStart: string;
   dateEnd: string;
   description?: string;

@@ -23,14 +23,14 @@ export default function CVPage() {
             let textClass = "text-black";
             let backgroundClass = "";
             if (item.appreviation === "SIU") {
-              borderClass = `border-2 border-black`;
-              textClass = `text-black`;
-              backgroundClass = `bg-siuPrimary`;
+              borderClass = `border-2 border-siuPrimary`;
+              textClass = `text-siuPrimary`;
+              //backgroundClass = `bg-siuPrimary`;
             }
             if (item.appreviation === "MCC") {
-              borderClass = `border-2 dark:border-mccSecondary border-mccSecondary`;
-              textClass = `dark:text-mccSecondary text-mccSecondary`;
-              backgroundClass = `bg-mccPrimary`;
+              borderClass = `border-2 dark:border-mccPrimary border-mccPrimary`;
+              textClass = `dark:text-mccSecondary text-mccPrimary`;
+              //backgroundClass = `bg-mccPrimary`;
             }
 
             return (
@@ -48,11 +48,11 @@ export default function CVPage() {
                 >
                   {item.name}
                 </CardTitle>
-                <CardDescription className="z-10 mt-2 text-white absolute top-0 inset-y-12 md:inset-y-16 inset-x-0 ">
+                <CardDescription className="z-10 mt-2 text-black dark:text-white absolute top-0 inset-y-12 md:inset-y-16 inset-x-0 ">
                   {item.degree}
                 </CardDescription>
 
-                <p className="z-10 mt-2 text-xs text-white absolute bottom-0 inset-x-0">
+                <p className="z-10 mt-2 text-xs text-black dark:text-white absolute bottom-0 inset-x-0">
                   {item.dateStart} - {item.dateEnd}
                 </p>
 
