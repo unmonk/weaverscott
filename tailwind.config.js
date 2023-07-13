@@ -100,7 +100,7 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         tada: "tada 1s ease-in-out infinite",
-        gradient: "gradient 10s ease infinite",
+        gradient: "gradient 8s ease infinite",
       },
     },
   },

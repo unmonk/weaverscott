@@ -23,7 +23,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
     va.track("resume_download");
   };
   return (
-    <Menubar className="rounded-none border-b border-none">
+    <Menubar className="rounded-none border-b border-none max-w-full overflow-hidden">
       <MenubarMenu>
         <MenubarTrigger className="font-bold">Scott</MenubarTrigger>
         <MenubarContent>

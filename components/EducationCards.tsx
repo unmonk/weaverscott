@@ -8,7 +8,7 @@ interface EducationCardsProps {}
 
 const EducationCards: FC<EducationCardsProps> = ({}) => {
   return (
-    <div className="grid grid-cols-1 gap-2 place-items-center ">
+    <div className="grid grid-cols-1 gap-2 place-items-center">
       {education.map((item: Education, index) => {
         const opacityClass = index === 0 ? "opacity-100" : "opacity-75";
         let borderClass = "border-2";
