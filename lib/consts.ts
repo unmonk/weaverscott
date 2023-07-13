@@ -134,11 +134,26 @@ export interface Organization {
   link?: string;
 }
 
+export const educationParagraphs = [
+  `I have a Bachelor in Computer Science from Southern Illinois University, and a Certificate from Mchenry County College while participating in their Dual Enrollment Program in High School.`,
+  `During my time at SIU I was President of the Association for Computing Machinery student chapter, 
+  led new students as a Salukli Peer Mentor and a New Student Orientation Leader.`,
+  `I also organized and ran SalukiLAN, an annual charity LAN party that raised money for the Childs Play Charity, hosting over 500 people.`,
+];
+
 export const education: Education[] = [
   {
     name: "Southern Illinois University",
     appreviation: "SIU",
     degree: "Bachelors of Computer Science",
+    minor: ["Aviation Flight", "Electrical Engineering"],
+    courses: [
+      "Web Applications",
+      "Databases",
+      "Linux and C",
+      "Data Structures",
+      "CS Ethics",
+    ],
     dateStart: "08/2012",
     dateEnd: "12/2015",
     description: "",
@@ -150,6 +165,7 @@ export const education: Education[] = [
   {
     name: "Mchenry County College",
     appreviation: "MCC",
+    courses: ["2D Animation", "C++", "Game Programming"],
     degree: "Certificate of Internet Programming",
     dateStart: "08/2008",
     dateEnd: "08/2010",
@@ -165,6 +181,8 @@ export interface Education {
   name: string;
   appreviation?: string;
   degree: string;
+  minor?: string | string[];
+  courses?: string[];
   dateStart: string;
   dateEnd: string;
   description?: string;
