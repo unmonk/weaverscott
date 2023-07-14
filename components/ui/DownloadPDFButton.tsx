@@ -12,6 +12,7 @@ const DownloadPDFButton: FC<DownloadPDFButtonProps> = ({}) => {
       asChild
       onMouseOver={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      size="sm"
     >
       <a
         href="/ScottWeaverResume.pdf"
