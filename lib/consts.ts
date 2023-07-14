@@ -18,6 +18,11 @@ export const employers: Employer[] = [
     logo: "",
     link: "https://www.getspot.com/",
     tech: ["Nest.js", "C#", "Kafka"],
+    experience: [
+      "Led the integration departments transition to an event-driven architecture, and rapidly prototyped solutions.",
+      "Implemented a forward chaining rule engine to streamline and optimize multiple disparate rulesets.",
+      "Collaborated on a Tech Council of the most senior engineers to shape the company's technology strategy and roadmap",
+    ],
   },
   {
     name: "Olive AI",
@@ -64,6 +69,7 @@ export interface Employer {
   link?: string;
   tech?: string[];
   navYear?: string;
+  experience?: string[];
 }
 
 export const organizations: Organization[] = [
@@ -399,3 +405,13 @@ export const projects: Project[] = [
     repo: "https://github.com/StonefortSolutions/capstone",
   },
 ];
+
+export const profile = {
+  name: "Scott Weaver",
+  title: "Lead Software Engineer",
+  email: "Scott@WeaverScott.com",
+  image: "/images/me.jpg",
+  "og:title": "Scott Weaver",
+  "og:description": "Full Stack Developer",
+  "og:image": "/images/profile.jpg",
+};
