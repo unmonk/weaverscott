@@ -19,8 +19,8 @@ const EducationCards: FC<EducationCardsProps> = ({}) => {
           textClass = `text-siuPrimary dark:text-black font-mono`;
         }
         if (item.appreviation === "MCC") {
-          borderClass = `border-2 dark:border-mccPrimary border-mccSecondary font-mono`;
-          textClass = `dark:text-mccSecondary text-mccPrimary`;
+          borderClass = `border-2 dark:border-mccPrimary border-mccSecondary`;
+          textClass = `dark:text-mccSecondary text-mccPrimary font-mono`;
         }
 
         return (

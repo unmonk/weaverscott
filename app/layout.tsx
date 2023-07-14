@@ -1,9 +1,9 @@
 import "./globals.css";
 import { Roboto, Raleway } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import Footer from "@/components/footer";
+import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/Navbar";
 
 const inter = Raleway({
   subsets: ["latin-ext"],

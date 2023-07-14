@@ -15,6 +15,7 @@ import {
 import { DownloadIcon } from "lucide-react";
 import { employers, organizations, education } from "@/lib/consts";
 import va from "@vercel/analytics";
+import Link from "next/link";
 
 interface NavbarProps {}
 
@@ -28,7 +29,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
         <MenubarTrigger className="font-bold">Scott</MenubarTrigger>
         <MenubarContent>
           <MenubarItem asChild className="cursor-pointer">
-            <a href="/">Go Home</a>
+            <Link href="/">Go Home</Link>
           </MenubarItem>
 
           <MenubarItem>Contact Me</MenubarItem>
@@ -49,7 +50,13 @@ const Navbar: FC<NavbarProps> = ({}) => {
               </MenubarShortcut>
             </a>
           </MenubarItem>
-          <MenubarItem>View</MenubarItem>
+          <MenubarItem
+            asChild
+            className="cursor-pointer"
+            onClick={onResumeClick}
+          >
+            <Link href={"/cv"}>View </Link>
+          </MenubarItem>
           <MenubarSub>
             <MenubarSubTrigger>Employers</MenubarSubTrigger>
             <MenubarSubContent>
