@@ -3,7 +3,8 @@ import { FC } from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import BeautifulEducation from "./BeautifulEducation";
 import TraditionalResume from "./TraditionalResume";
-import { employers } from "@/lib/consts";
+import { employers, education, organizations } from "@/lib/consts";
+import BeautifulEmployment from "./BeautifulEmployment";
 
 interface ResumeProps {}
 
@@ -26,13 +27,16 @@ const Resume: FC<ResumeProps> = ({}) => {
         </div>
         <TabsContent value={"beautiful"}>
           <BeautifulEducation />
+          <BeautifulEmployment />
         </TabsContent>
         <TabsContent value={"traditional"}>
           <TraditionalResume />
         </TabsContent>
         <TabsContent value={"json"}>
           <div className="bg-secondary">
-            <code>{JSON.stringify({ employers }, null, 2)}</code>
+            <code>
+              {JSON.stringify({ employers, education, organizations }, null, 2)}
+            </code>
           </div>
         </TabsContent>
       </Tabs>

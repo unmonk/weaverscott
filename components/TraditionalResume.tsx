@@ -6,7 +6,7 @@ interface TraditionalResumeProps {}
 
 const TraditionalResume: FC<TraditionalResumeProps> = ({}) => {
   return (
-    <div className="h-[9.25in] w-[7in] p-4 bg-white text-black text-left font-sans">
+    <div className="md:min-h-[11in] max-w-[9in] md:p-4 p-2 bg-white text-black text-left font-sans">
       <h1 className="text-xl font-bold">Scott Weaver</h1>
       <h2 className="text-lg font-bold">Lead Software Engineer</h2>
       <small>WeaverScott.com | Scott@WeaverScott.com | Illinois, USA</small>

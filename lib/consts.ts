@@ -7,6 +7,9 @@ export const employers: Employer[] = [
     navYear: "Hire Me",
     description: "",
     logo: "",
+    experience: [
+      "Available for full time work. References Available.  Send me an email!",
+    ],
   },
   {
     name: "Spot",
@@ -15,13 +18,13 @@ export const employers: Employer[] = [
     dateEnd: "08/2022",
     navYear: "2022",
     description: "",
-    logo: "",
+    logo: "/images/spot.png",
     link: "https://www.getspot.com/",
     tech: ["Nest.js", "C#", "Kafka"],
     experience: [
       "Led the integration departments transition to an event-driven architecture, and rapidly prototyped solutions.",
       "Implemented a forward chaining rule engine to streamline and optimize multiple disparate rulesets.",
-      "Collaborated on a Tech Council of the most senior engineers to shape the company's technology strategy and roadmap",
+      "Collaborated on a Tech Council of the most senior engineers to shape the company's technology strategy and roadmap.",
     ],
   },
   {
@@ -31,9 +34,16 @@ export const employers: Employer[] = [
     dateEnd: "04/2022",
     navYear: "2022",
     description: "",
-    logo: "",
+    logo: "/images/olive.webp",
     link: "https://oliveai.com/",
     tech: ["Node.js", "Selenium", "OpenCV", "AWS"],
+    experience: [
+      "Hired, mentored and coached a team of software developers. Led daily scrum activities.",
+      "Collaborated closely with healthcare partners to rapidly architect time-sensitive process automations.",
+      "Utilized Node, AWS, and a suite of libraries such as OpenCV and Puppeteer to develop automated processes for my customers.",
+      "Created automation to reduce COVID testing time by 86% and automated COVID Vaccine scheduling and analysis",
+      "Automated supply chain purchase order dispatching and confirmations, and scheduling on legacy systems",
+    ],
   },
   {
     name: "Innovate Softworks",
@@ -42,9 +52,15 @@ export const employers: Employer[] = [
     dateEnd: "06/2020",
     navYear: "2020",
     description: "",
-    logo: "",
+    logo: "/images/softworks.webp",
     link: "https://innovatesoftworks.com/",
     tech: ["Electron", "React", "Node.js", "MSSQL", "C#"],
+    experience: [
+      "Partnered with industrial and health care clients to develop solutions for onsite, locally managed software.",
+      "Worked with legacy applications, refactoring and updating for modern Windows APIs.",
+      "Built full stack applications in C#, Node, React and Electron to generate and download firmware for industrial machines.",
+      "Worked with a fully distributed, agile team of contracted junior developers.",
+    ],
   },
   {
     name: "Liberty Mutual",
@@ -53,9 +69,15 @@ export const employers: Employer[] = [
     dateEnd: "08/2018",
     navYear: "2018",
     description: "",
-    logo: "",
+    logo: "/images/liberty.avif",
     link: "https://www.libertymutual.com/",
-    tech: [],
+    tech: ["React", "Node.js", "MongoDB", "Java", "C#"],
+    experience: [
+      "Developed innovative insurance products in new markets such as Nest Protect, RightTrack, HighwayHero, Auto OEM Telematics Programs.",
+      "Created or maintained numerous internal and public REST and SOAP APIs in Node, Java, and MongoDB, focusing on reducing quoting time and increasing user retention.",
+      "Lead a small team to create an API automating a search for existing discounts previously available to a customer.",
+      "Maintained and migrated C# and Java legacy on-premises services to Cloud Foundry, AWS.",
+    ],
   },
 ];
 
