@@ -86,6 +86,23 @@ module.exports = {
             transform: "scale3d(1, 1, 1)",
           },
         },
+        flag: {
+          "0%": {
+            transform:
+              "rotateX(0deg) matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)",
+            filter: "drop-shadow(2px 3px 7px rgba(0, 0, 0, .7))",
+          },
+          "50%": {
+            transform:
+              "rotateX(10deg) matrix3d(0.9829214561476214, 0, 0, -0.00003271751695857963, 0, 0.9962483913887495, 0, -0.000021811677972386414, 0, 0, 1, 0, 0, 0, 0, 1)",
+          },
+          "100%": {
+            transform:
+              "rotateX(0deg) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)",
+            filter: "drop-shadow(2px 3px 7px rgba(0, 0, 0, .7))",
+          },
+        },
+
         gradient: {
           "0%, 100%": {
             "background-position": "0% 50%",
@@ -101,6 +118,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         tada: "tada 1s ease-in-out infinite",
         gradient: "gradient 8s ease infinite",
+        flag: "flag 2s infinite",
       },
     },
   },
