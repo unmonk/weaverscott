@@ -338,20 +338,26 @@ export const TechList = [
     name: "MSSQL",
     icon: "/icons/microsoftsqlserver-plain.svg",
   },
+  {
+    name: "Stripe",
+    icon: "/icons/stripe.svg",
+  },
+  {
+    name: "Java",
+    icon: "/icons/java-original.svg",
+  },
 ];
 
 export const aboutMeParagraphs = [
   ` I’m a full stack developer and team leader with 8 years of
     experience. A Javascript dominate polyglot, I believe in choosing
-            the right tools for the job, and am not afraid to pick up other
-            stacks.
+            the right tools for the job.
             `,
   ` I develop practical and maintainable software. Collaborate
             closely with my business partners, product owners and other
             stakeholders to ensure we deliver quality. I've had a chance to lead
             other developers on multiple occasion and have found it immensely
-            rewarding. Hiring, growing, and retaining good people is the key to
-            good products.`,
+            rewarding.`,
   `I’m looking to continue growing as a people leader
             and develop great applications. Send me a message!`,
 ];
@@ -365,6 +371,7 @@ export interface Project {
   repo?: string;
   link?: string;
   external?: string;
+  live?: boolean;
 }
 
 export const projects: Project[] = [
@@ -372,14 +379,13 @@ export const projects: Project[] = [
     name: "RightTrack / Highway Hero",
     description:
       "RightTrack is a program that puts you in control of your auto policy savings by evaluating your safe driving habits. Some specific behaviors observed by RightTrack include braking, acceleration, and nighttime driving.",
-    techStack: ["Express", "Node.js", "MongoDB", "React"],
-    image: "/yoshi.png",
+    techStack: ["Express", "Node.js", "MongoDB", "React", "Java"],
     external: "https://www.libertymutual.com/righttrack",
   },
   {
-    name: "Streaks",
+    name: "ChainLink",
     description:
-      "An open source clone of the ESPN Streak for the cash application from the late 2000s. Cron jobs keep scores and statuses up to date. Powered by a library I maintian called SportsDataVerse.",
+      "An open source clone of the ESPN Streak for the cash application. Choose a team to win a game. If they win, you keep your streak going. If they lose, you start over. How long can you go?. Data is powered by a library I help maintian called SportsDataVerse.",
     techStack: [
       "Next.js",
       "Tailwind CSS",
@@ -387,16 +393,16 @@ export const projects: Project[] = [
       "Vercel",
       "Typescript",
     ],
-    image: "/yoshi.png",
-    demo: "https://mercstreaks.vercel.app/",
+    image: "/images/chainlinkpreview.png",
+    demo: "https://streaks.mercsclan.com/",
     repo: "https://github.com/unmonk/mercstreaks",
+    live: true,
   },
   {
     name: "Merc Chan",
     description:
       "Merc Chan is a multipurpose discord bot serving thousands of users. Tools range from moderation, community engagement, and creative production. Has access to the OpenAI API.",
     techStack: ["Discord.js", "Node.js", "MongoDB", "OpenAI"],
-    image: "/yoshi.png",
     repo: "https://github.com/MercsClan/mercchan",
   },
   {
@@ -404,7 +410,6 @@ export const projects: Project[] = [
     description:
       "Automated time consuming data entry and paper work for time sensitive in person testing. Saved clinicians 50 hours per day in data entry and made the in-person covid testing process up to seven and a half times faster.",
     techStack: ["Selenium", "Node.js", "AWS", "OpenCV"],
-    image: "/yoshi.png",
     external:
       "https://www.prnewswire.com/news-releases/olives-ai-workforce-to-revolutionize-covid-19-testing-at-tufts-medical-center-301139423.html",
   },
@@ -413,18 +418,48 @@ export const projects: Project[] = [
     description:
       "A Node.js wrapper for the remaining public ESPN APIs, and a few other sports APIs. Scraping when necessary. Powers the Streaks application.",
     techStack: ["Node.js", "Mocha", "NPM"],
-    image: "/yoshi.png",
     link: "https://www.npmjs.com/package/sportsdataverse",
     demo: "https://js.sportsdataverse.org/",
     repo: "https://github.com/sportsdataverse/sportsdataverse-js",
   },
   {
     name: "FloorPlanner",
-    description: "3D Floor planning application built with Three.js and React.",
-    techStack: ["Three.js", "Express", "PostgreSQL", "React", "Redux"],
-    image: "/yoshi.png",
+    description:
+      "3D Floor planning application built with Three.js and React. Drag and drop furniture, build walls and rooms, and save your plans. Subscribe with Stripe to unlock more save slots.",
+    techStack: [
+      "Three.js",
+      "Express",
+      "PostgreSQL",
+      "React",
+      "Redux",
+      "Stripe",
+    ],
     demo: "https://capstone-production-e9d2.up.railway.app/",
     repo: "https://github.com/StonefortSolutions/capstone",
+  },
+  {
+    name: "Generative Ai Toolset",
+    description:
+      "A collection of tools to generate text, images, video, audio, and more. Powered by OpenAI and Replicate's APIs. Built with Next.js. API Limited without Stripe subscription.",
+    techStack: [
+      "Next.js",
+      "Stripe",
+      "OpenAI",
+      "PostgreSQL",
+      "Vercel",
+      "Typescript",
+    ],
+    image: "/images/aipreview.png",
+    demo: "https://gen.mercsclan.com",
+    repo: "https://github.com/unmonk/generativeai",
+  },
+  {
+    name: "WeaverScott.com",
+    description:
+      "This website! A Next.js 13.4+ application built with Typescript, Tailwind CSS, and Vercel. Hosted on Vercel.",
+    techStack: ["Next.js", "Vercel", "Typescript"],
+    demo: "https://gen.mercsclan.com",
+    repo: "https://github.com/unmonk/generativeai",
   },
 ];
 

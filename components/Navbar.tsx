@@ -32,7 +32,9 @@ const Navbar: FC<NavbarProps> = ({}) => {
             <Link href="/">Go Home</Link>
           </MenubarItem>
 
-          <MenubarItem>Contact Me</MenubarItem>
+          <MenubarItem asChild className="cursor-pointer">
+            <Link href="mailto:scott@weaverscott.com">Email Me</Link>
+          </MenubarItem>
         </MenubarContent>
       </MenubarMenu>
       <MenubarMenu>

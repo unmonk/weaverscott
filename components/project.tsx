@@ -3,16 +3,17 @@ import { projects, Project } from "@/lib/consts";
 import { GithubIcon, ExternalLinkIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import TechIcons from "./TechIcons";
+import Image from "next/image";
 
 interface ProjectProps {
   project: Project;
 }
 
 const Project: FC<ProjectProps> = ({
-  project: { name, description, techStack, demo, repo, external },
+  project: { name, description, techStack, demo, repo, external, live },
 }) => {
   return (
-    <div className="border hover:border-slate-400 border-slate-300  rounded-xl col-span-1 flex flex-col">
+    <div className="border w-[250px] hover:border-slate-400 border-slate-300  rounded-xl col-span-1 flex flex-col">
       <div className="w-full h-16 overflow-ellipsis p-2">
         <h3 className="text-xl font-semibold">{name}</h3>
       </div>
@@ -21,6 +22,12 @@ const Project: FC<ProjectProps> = ({
           {description}
         </p>
       </div>
+      {live && (
+        <div className="flex flex-row items-center justify-center py-1 animate-pulse">
+          <div className="rounded-full w-3 h-3 overflow-hidden bg-green-500"></div>
+          <p className="text-muted text-xs ml-1">Active Development</p>
+        </div>
+      )}
       <div className="flex flex-col md:flex-row gap-2 py-1 justify-evenly">
         {demo && (
           <Button variant="outline" size="sm" className="rounded-xl" asChild>
