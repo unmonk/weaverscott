@@ -10,14 +10,24 @@ interface ProjectProps {
 }
 
 const Project: FC<ProjectProps> = ({
-  project: { name, description, techStack, demo, repo, external, live },
+  project: {
+    name,
+    description,
+    techStack,
+    demo,
+    repo,
+    external,
+    live,
+    library,
+    command,
+  },
 }) => {
   return (
     <div className="border w-full min-w-[250px] hover:border-slate-400 border-slate-300  rounded-xl col-span-1 flex flex-col">
       <div className="w-full h-16 overflow-ellipsis p-2">
         <h3 className="text-xl font-semibold">{name}</h3>
       </div>
-      <div className="flex flex-1">
+      <div className="flex flex-col flex-1">
         <p className="text-sm text-start text-muted-foreground p-2">
           {description}
         </p>
@@ -27,6 +37,11 @@ const Project: FC<ProjectProps> = ({
           <div className="rounded-full w-3 h-3 overflow-hidden bg-green-500"></div>
           <p className="text-muted text-xs ml-1">Active Development</p>
         </div>
+      )}
+      {library && command && (
+        <code className="text-xs bg-gray-500 p-2 m-2 text-primary border rounded">
+          {command}
+        </code>
       )}
       <div className="flex flex-col md:flex-row gap-2 py-1 justify-evenly">
         {demo && (

@@ -372,6 +372,8 @@ export interface Project {
   link?: string;
   external?: string;
   live?: boolean;
+  library?: boolean;
+  command?: string;
 }
 
 export const projects: Project[] = [
@@ -421,6 +423,8 @@ export const projects: Project[] = [
     link: "https://www.npmjs.com/package/sportsdataverse",
     demo: "https://js.sportsdataverse.org/",
     repo: "https://github.com/sportsdataverse/sportsdataverse-js",
+    library: true,
+    command: "npm install sportsdataverse",
   },
   {
     name: "FloorPlanner",
