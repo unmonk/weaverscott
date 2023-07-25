@@ -13,7 +13,7 @@ const Project: FC<ProjectProps> = ({
   project: { name, description, techStack, demo, repo, external, live },
 }) => {
   return (
-    <div className="border w-[250px] hover:border-slate-400 border-slate-300  rounded-xl col-span-1 flex flex-col">
+    <div className="border w-full min-w-[250px] hover:border-slate-400 border-slate-300  rounded-xl col-span-1 flex flex-col">
       <div className="w-full h-16 overflow-ellipsis p-2">
         <h3 className="text-xl font-semibold">{name}</h3>
       </div>
