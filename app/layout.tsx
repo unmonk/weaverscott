@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     firstName: "Scott",
     lastName: "Weaver",
     title: "Software Engineer | Manager | Cat Dad",
-    description: "Software Engineer | Manager | Cat Dad",
+    description: "Cool Next.js Projects, Cat Pictures, and More!",
     url: "https://weaverscott.com",
     type: "profile",
     images: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     site: "https://weaverscott.com",
     card: "summary_large_image",
     title: "Scott Weaver's Portfolio",
-    description: "Software Engineer | Manager | Cat Dad",
+    description: "Cool Next.js Projects, Cat Pictures, and More!",
   },
   creator: "Scott Weaver",
   keywords: [
