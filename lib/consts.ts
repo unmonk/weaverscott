@@ -460,10 +460,10 @@ export const projects: Project[] = [
   {
     name: "WeaverScott.com",
     description:
-      "This website! A Next.js 13.4+ application built with Typescript, Tailwind CSS, and Vercel. Hosted on Vercel.",
+      "This website! A Next.js app router application built with Typescript, Tailwind CSS, and Vercel. Hosted on Vercel.",
     techStack: ["Next.js", "Vercel", "Typescript"],
-    demo: "https://gen.mercsclan.com",
-    repo: "https://github.com/unmonk/generativeai",
+    demo: "https://weaverscott.com",
+    repo: "https://github.com/unmonk/weaverscott",
   },
 ];
 
