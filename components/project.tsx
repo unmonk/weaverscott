@@ -3,7 +3,6 @@ import { projects, Project } from "@/lib/consts";
 import { GithubIcon, ExternalLinkIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import TechIcons from "./TechIcons";
-import Image from "next/image";
 
 interface ProjectProps {
   project: Project;
@@ -33,13 +32,15 @@ const Project: FC<ProjectProps> = ({
         </p>
       </div>
       {live && (
-        <div className="flex flex-row items-center justify-center py-1 animate-pulse">
-          <div className="rounded-full w-3 h-3 overflow-hidden bg-green-500"></div>
-          <p className="text-muted text-xs ml-1">Active Development</p>
+        <div className="flex flex-row items-center justify-center bg-neutral-200 dark:bg-gray-700 p-2 m-2 rounded ">
+          <div className="rounded-full w-3 h-3 overflow-hidden bg-green-500 animate-pulse "></div>
+          <p className="text-primary  text-xs ml-1 animate-pulse">
+            Active Development
+          </p>
         </div>
       )}
       {library && command && (
-        <code className="text-xs bg-gray-500 p-2 m-2 text-primary border rounded">
+        <code className="text-xs bg-neutral-200 dark:bg-gray-700 p-2 m-2 text-primary rounded">
           {command}
         </code>
       )}
