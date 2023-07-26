@@ -419,7 +419,7 @@ export const projects: Project[] = [
     name: "SportsDataVerse",
     description:
       "A Node.js wrapper for the remaining public ESPN APIs, and a few other sports APIs. Scraping when necessary. Powers the Streaks application.",
-    techStack: ["Node.js", "Mocha", "NPM"],
+    techStack: ["Node.js", "Mocha", "NPM", "Vercel"],
     link: "https://www.npmjs.com/package/sportsdataverse",
     demo: "https://js.sportsdataverse.org/",
     repo: "https://github.com/sportsdataverse/sportsdataverse-js",
