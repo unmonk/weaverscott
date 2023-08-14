@@ -405,6 +405,7 @@ export const projects: Project[] = [
       "Typescript",
     ],
     image: "/images/chainlinkpreview.png",
+    demo: "https://chainlink.st",
 
     live: true,
   },
@@ -446,8 +447,7 @@ export const projects: Project[] = [
       "Redux",
       "Stripe",
     ],
-    demo: "https://capstone-production-e9d2.up.railway.app/",
-    repo: "https://github.com/StonefortSolutions/capstone",
+    repo: "https://github.com/StonefortSolutions/floorplanner",
   },
   {
     name: "Generative Ai Toolset",
