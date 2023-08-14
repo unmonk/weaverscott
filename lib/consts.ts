@@ -275,6 +275,10 @@ export const TechList = [
     icon: "/icons/redis-original.svg",
   },
   {
+    name: "Planetscale",
+    icon: "/icons/planetscale.svg",
+  },
+  {
     name: "DotNet Core",
     icon: "/icons/dotnetcore-original.svg",
   },
@@ -346,6 +350,10 @@ export const TechList = [
     name: "Java",
     icon: "/icons/java-original.svg",
   },
+  {
+    name: "Drizzle",
+    icon: "/icons/drizzle.svg",
+  },
 ];
 
 export const aboutMeParagraphs = [
@@ -378,7 +386,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    name: "RightTrack / Highway Hero",
+    name: "Liberty Mutual RightTrack",
     description:
       "RightTrack is a program that puts you in control of your auto policy savings by evaluating your safe driving habits. Some specific behaviors observed by RightTrack include braking, acceleration, and nighttime driving.",
     techStack: ["Express", "Node.js", "MongoDB", "React", "Java"],
@@ -387,45 +395,45 @@ export const projects: Project[] = [
   {
     name: "ChainLink",
     description:
-      "An open source clone of the ESPN Streak for the cash application. Choose a team to win a game. If they win, you keep your streak going. If they lose, you start over. How long can you go?. Data is powered by a library I help maintian called SportsDataVerse.",
+      "A clone of a sports streak game. Choose correct sports winners to build your chain. Built with Next.js, PlanetScale, Drizzle, and Upstash.  Data is powered by SportsDataVerse.",
     techStack: [
       "Next.js",
-      "Tailwind CSS",
-      "PostgreSQL",
+      "Redis",
+      "Planetscale",
+      "Drizzle",
       "Vercel",
       "Typescript",
     ],
     image: "/images/chainlinkpreview.png",
-    demo: "https://streaks.mercsclan.com/",
-    repo: "https://github.com/unmonk/mercstreaks",
+
     live: true,
   },
   {
-    name: "Merc Chan",
+    name: "SportsDataVerse",
+    description:
+      "A Node.js wrapper for the remaining public ESPN APIs, and a few other sports APIs. Scraping when necessary.",
+    techStack: ["Node.js", "Mocha", "NPM", "Vercel"],
+    external: "https://js.sportsdataverse.org/",
+    repo: "https://github.com/sportsdataverse/sportsdataverse-js",
+    library: true,
+    command: "npm install sportsdataverse",
+  },
+  {
+    name: "'Merc-Chan' Discord Bot",
     description:
       "Merc Chan is a multipurpose discord bot serving thousands of users. Tools range from moderation, community engagement, and creative production. Has access to the OpenAI API.",
     techStack: ["Discord.js", "Node.js", "MongoDB", "OpenAI"],
     repo: "https://github.com/MercsClan/mercchan",
   },
   {
-    name: "Covid19 Testing",
+    name: "Wellforce Covid19 Automations",
     description:
       "Automated time consuming data entry and paper work for time sensitive in person testing. Saved clinicians 50 hours per day in data entry and made the in-person covid testing process up to seven and a half times faster.",
     techStack: ["Selenium", "Node.js", "AWS", "OpenCV"],
     external:
       "https://www.prnewswire.com/news-releases/olives-ai-workforce-to-revolutionize-covid-19-testing-at-tufts-medical-center-301139423.html",
   },
-  {
-    name: "SportsDataVerse",
-    description:
-      "A Node.js wrapper for the remaining public ESPN APIs, and a few other sports APIs. Scraping when necessary. Powers the Streaks application.",
-    techStack: ["Node.js", "Mocha", "NPM", "Vercel"],
-    link: "https://www.npmjs.com/package/sportsdataverse",
-    demo: "https://js.sportsdataverse.org/",
-    repo: "https://github.com/sportsdataverse/sportsdataverse-js",
-    library: true,
-    command: "npm install sportsdataverse",
-  },
+
   {
     name: "FloorPlanner",
     description:
@@ -460,7 +468,7 @@ export const projects: Project[] = [
   {
     name: "WeaverScott.com",
     description:
-      "This website! A Next.js app router application built with Typescript, Tailwind CSS, and Vercel. Hosted on Vercel.",
+      "This website! A Next.js app router application built with Typescript, Tailwind CSS, and Vercel.",
     techStack: ["Next.js", "Vercel", "Typescript"],
     demo: "https://weaverscott.com",
     repo: "https://github.com/unmonk/weaverscott",
