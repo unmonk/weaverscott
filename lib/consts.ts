@@ -479,7 +479,7 @@ export const testimonials = [
   {
     name: "Dylan Lein-Hellios",
     quote: `Scott's mentorship was instrumental to starting my career
-            as a software engineer. I've known Scott for many years, and I
+            as a software engineer. I
             credit his guidance and encouragement with helping me finally make
             the leap to engineering. We shared some time at Olive, and even
             though he was not my direct manager, he always took time to help
@@ -491,7 +491,7 @@ export const testimonials = [
     name: "Ramon Grullon",
     quote: `Scott is an incredible developer who showed leadership and
             skill on a project we worked on together. Scott always found time to
-            help mentor and teach to the entire team.`,
+            help mentor and teach to the entire team. His work on JavaScript, C#, and SQL were top notch and helped our project meet our deliverables. `,
     avatar: "/images/rg.jpg",
   },
   {

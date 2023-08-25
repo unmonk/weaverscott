@@ -15,7 +15,7 @@ const Header: FC<HeaderProps> = ({}) => {
           <AvatarFallback>SW</AvatarFallback>
         </Avatar>
 
-        <h1 className="text-6xl font-bold">{profile.name}</h1>
+        <h1 className="text-4xl md:text-6xl font-bold">{profile.name}</h1>
       </div>
     </section>
   );

@@ -35,7 +35,7 @@ export default function Home() {
                   className="rounded-xl w-24 h-24 dark:bg-black/30 bg-black/80"
                 />
                 <h3 className="text-2xl font-semibold text-left">RightTrack</h3>
-                <p className="text-left">
+                <p className="text-left text-xs md:text-base">
                   RightTrack is a program that puts you in control of your auto
                   policy savings by evaluating your safe driving habits.
                 </p>
@@ -64,7 +64,7 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold text-left">
                   FloorPlanner
                 </h3>
-                <p className="text-left flex-1">
+                <p className="text-left flex-1 text-xs md:text-base">
                   Drag and drop furniture, build walls and rooms, and save your
                   plans. Subscribe with Stripe to unlock more save slots.
                 </p>
