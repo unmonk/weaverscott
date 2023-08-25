@@ -1,24 +1,25 @@
 import "./globals.css";
-import { Roboto } from "next/font/google";
+import { Quicksand } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import Navbar from "@/components/Navbar";
 import { Metadata } from "next";
 
-const inter = Roboto({
+const inter = Quicksand({
   subsets: ["latin-ext"],
-  weight: ["100", "300", "400", "500", "700", "900"],
+  weight: ["300", "400", "500", "700"],
 });
 
 export const metadata: Metadata = {
   title: "Scott Weaver",
-  description: "Software Engineer | Manager | Cat Dad",
+  description: "Software Engineer | Manager",
   openGraph: {
     firstName: "Scott",
     lastName: "Weaver",
-    title: "Software Engineer | Manager | Cat Dad",
-    description: "Cool Next.js Projects, Cat Pictures, and More!",
+    title: "Software Engineer | Manager",
+    description:
+      "Senior software engnieer and manager. Developer of ChainLink, MercChan, and more.",
     url: "https://weaverscott.com",
     type: "profile",
     images: [
@@ -40,7 +41,8 @@ export const metadata: Metadata = {
     site: "https://weaverscott.com",
     card: "summary_large_image",
     title: "Scott Weaver's Portfolio",
-    description: "Cool Next.js Projects, Cat Pictures, and More!",
+    description:
+      "Senior software engnieer and manager. Developer of ChainLink, MercChan, and more.",
   },
   creator: "Scott Weaver",
   keywords: [
@@ -60,7 +62,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <main className="flex min-h-screen flex-col overflow-x-hidden">
+          <main className="flex min-h-screen flex-col overflow-x-hidden no-scrollbar">
             <Navbar />
             {children}
             <Footer />
