@@ -1,14 +1,14 @@
 import "./globals.css";
-import { Jost } from "next/font/google";
+import { Roboto } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import Navbar from "@/components/Navbar";
 import { Metadata } from "next";
 
-const inter = Jost({
+const inter = Roboto({
   subsets: ["latin-ext"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["100", "300", "400", "500", "700", "900"],
 });
 
 export const metadata: Metadata = {

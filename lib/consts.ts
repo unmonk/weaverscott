@@ -133,15 +133,6 @@ export const organizations: Organization[] = [
     link: "https://hacksi.org/",
   },
   {
-    name: "Mercs",
-    title: "Commander",
-    dateStart: "08/2010",
-    dateEnd: "Present",
-    description: "",
-    logo: "",
-    link: "https://mercsclan.com/",
-  },
-  {
     name: "Operation Code",
     title: "Member",
     dateStart: "2016",
@@ -275,7 +266,7 @@ export const TechList = [
     icon: "/icons/redis-original.svg",
   },
   {
-    name: "Planetscale",
+    name: "PlanetScale",
     icon: "/icons/planetscale.svg",
   },
   {
@@ -357,17 +348,11 @@ export const TechList = [
 ];
 
 export const aboutMeParagraphs = [
-  ` I’m a full stack developer and team leader with 8 years of
-    experience. A Javascript dominate polyglot, I believe in choosing
-            the right tools for the job.
+  `I am a Senior software engineer and team leader with 8 years of hands-on experience in designing, developing, and
+supporting both rapidly prototyped solutions, and long coordinated enterprise applications.
             `,
-  ` I develop practical and maintainable software. Collaborate
-            closely with my business partners, product owners and other
-            stakeholders to ensure we deliver quality. I've had a chance to lead
-            other developers on multiple occasion and have found it immensely
-            rewarding.`,
   `I’m looking to continue growing as a people leader
-            and develop great applications. Send me a message!`,
+            and develop great applications.`,
 ];
 
 export interface Project {
@@ -474,6 +459,11 @@ export const projects: Project[] = [
     repo: "https://github.com/unmonk/weaverscott",
   },
 ];
+
+export const socials = {
+  github: "https://github.com/unmonk",
+  linkedin: "https://linkedin.com/in/scottweaverdev",
+};
 
 export const profile = {
   name: "Scott Weaver",

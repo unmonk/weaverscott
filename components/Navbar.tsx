@@ -13,7 +13,7 @@ import {
   MenubarSubContent,
 } from "./ui/menubar";
 import { DownloadIcon } from "lucide-react";
-import { employers, organizations, education } from "@/lib/consts";
+import { employers, organizations, education, socials } from "@/lib/consts";
 import va from "@vercel/analytics";
 import Link from "next/link";
 
@@ -26,19 +26,12 @@ const Navbar: FC<NavbarProps> = ({}) => {
   return (
     <Menubar className="rounded-none border-b border-none max-w-full overflow-hidden">
       <MenubarMenu>
-        <MenubarTrigger className="font-bold">Scott</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem asChild className="cursor-pointer">
-            <Link href="/">Go Home</Link>
-          </MenubarItem>
-
-          <MenubarItem asChild className="cursor-pointer">
-            <Link href="mailto:scott@weaverscott.com">Email Me</Link>
-          </MenubarItem>
-        </MenubarContent>
+        <MenubarTrigger className="font-bold">
+          <Link href="/">Scott</Link>
+        </MenubarTrigger>
       </MenubarMenu>
       <MenubarMenu>
-        <MenubarTrigger>CV | Resume</MenubarTrigger>
+        <MenubarTrigger>Resume</MenubarTrigger>
         <MenubarContent>
           <MenubarItem
             asChild
@@ -103,23 +96,20 @@ const Navbar: FC<NavbarProps> = ({}) => {
           </MenubarSub>
         </MenubarContent>
       </MenubarMenu>
+
       <MenubarMenu>
-        <MenubarTrigger>Projects</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>Coming Soon</MenubarItem>
-        </MenubarContent>
+        <MenubarTrigger>
+          <Link href={socials.github} target="_blank">
+            Github
+          </Link>
+        </MenubarTrigger>
       </MenubarMenu>
       <MenubarMenu>
-        <MenubarTrigger>Art</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>Coming Soon</MenubarItem>
-        </MenubarContent>
-      </MenubarMenu>
-      <MenubarMenu>
-        <MenubarTrigger>Blog</MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem>Coming Soon</MenubarItem>
-        </MenubarContent>
+        <MenubarTrigger>
+          <Link href={socials.linkedin} target="_blank">
+            Linkedin
+          </Link>
+        </MenubarTrigger>
       </MenubarMenu>
     </Menubar>
   );

@@ -1,38 +1,21 @@
 import { FC } from "react";
-import Techstack from "./techstack";
-import { aboutMeParagraphs } from "@/lib/consts";
+import { aboutMeParagraphs, TechList } from "@/lib/consts";
+import Image from "next/image";
 
 interface AboutProps {}
 
 const About: FC<AboutProps> = ({}) => {
-  const FavoriteTech = [
-    "Next.js",
-    "Tailwind CSS",
-    "PostgreSQL",
-    "Javascript",
-    "React",
-  ];
   return (
-    <section>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
-        <h2 className="hidden md:block md:order-1 col-span-1 text-xl font-semibold">
-          Current Favorite Tech
-        </h2>
-        <h2 className="order-1 md:order-2 col-span-3 text-xl font-semibold">
-          About Me
-        </h2>
-        <div className="order-4 hidden md:flex md:order-3 col-span-1  flex-col gap-2">
-          {/* Tech Stack List */}
-          <Techstack stack={FavoriteTech} />
-        </div>
-        <div className="order-2 md:order-4 border rounded-xl border-slate-300 col-span-3">
-          {/* About me area */}
-          {aboutMeParagraphs.map((paragraph) => (
-            <p className="text-left p-4 font-semibold" key={paragraph}>
-              {paragraph}
-            </p>
-          ))}
-        </div>
+    <section className="flex flex-col max-w-4xl">
+      <h2 className=" text-2xl font-semibold">About Me</h2>
+      <div className=" rounded-xl border-primary relative">
+        <div className="bg-gradient-to-tr from-gray-300 via-background to-gray-400 w-full h-full rounded-xl blur-xl hover:blur-2xl hover:opacity-30 opacity-20 absolute"></div>
+        {/* About me area */}
+        {aboutMeParagraphs.map((paragraph) => (
+          <p className="text-left p-4 font-semibold" key={paragraph}>
+            {paragraph}
+          </p>
+        ))}
       </div>
     </section>
   );
