@@ -1,13 +1,12 @@
-import { Separator } from "@/components/ui/separator";
-import { Projects } from "@/components/project";
 import About from "@/components/about";
 import Header from "@/components/header";
-import Techstack from "@/components/techstack";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ChainLinkDisplay } from "@/components/chainlinkDisplay";
-import { DownloadCloudIcon, ExternalLinkIcon } from "lucide-react";
+import { ExternalLinkIcon } from "lucide-react";
 import Link from "next/link";
+import Testimonials from "@/components/testimonials";
+import { testimonials } from "@/lib/consts";
 
 export default function Home() {
   return (
@@ -17,12 +16,16 @@ export default function Home() {
         <About />
       </section>
 
+      <section className="grid md:grid-cols-3 md:grid-rows-1 grid-cols-1 grid-rows-3 items-center gap-6 grid-flow-row-dense xl:w-3/4">
+        <Testimonials testimonials={testimonials} />
+      </section>
+
       <section>
         <h2 className="text-2xl font-semibold mb-6">Featured Work</h2>
         <div className="flex flex-col gap-6 max-w-2xl">
           <ChainLinkDisplay />
           <div className="flex flex-row justify-center gap-4">
-            <div className="border-black/10 border bg-accent flex flex-col lg:flex-row rounded-xl p-4 lg:h-96 hover:border-white/20 overflow-hidden w-1/2">
+            <div className="border-black/10 border bg-accent flex flex-col lg:flex-row rounded-xl p-4 lg:h-96 hover:border-white/20 overflow-hidden w-1/2 animate-fade-in">
               <div className="flex flex-col gap-4 p-2">
                 <Image
                   src="/images/liberty.svg"
@@ -49,7 +52,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="border-black/10 border bg-accent flex flex-col lg:flex-row rounded-xl p-4 lg:h-96 hover:border-white/20 overflow-hidden w-1/2">
+            <div className="border-black/10 border bg-accent flex flex-col lg:flex-row rounded-xl p-4 lg:h-96 hover:border-white/20 overflow-hidden w-1/2 animate-fade-in">
               <div className="flex flex-col gap-4 p-2">
                 <Image
                   src="/images/floorplannerpreview.png"

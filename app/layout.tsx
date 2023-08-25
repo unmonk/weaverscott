@@ -60,7 +60,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <main className="flex min-h-screen flex-col">
+          <main className="flex min-h-screen flex-col overflow-x-hidden">
             <Navbar />
             {children}
             <Footer />

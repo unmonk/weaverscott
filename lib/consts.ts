@@ -474,3 +474,35 @@ export const profile = {
   "og:description": "Full Stack Developer",
   "og:image": "/images/profile.jpg",
 };
+
+export const testimonials = [
+  {
+    name: "Dylan Lein-Hellios",
+    quote: `Scott's mentorship was instrumental to starting my career
+            as a software engineer. I've known Scott for many years, and I
+            credit his guidance and encouragement with helping me finally make
+            the leap to engineering. We shared some time at Olive, and even
+            though he was not my direct manager, he always took time to help
+            where he could. His patient and knowledgeable approach would be a
+            boon to any team.`,
+    avatar: "/images/dlh.jpg",
+  },
+  {
+    name: "Ramon Grullon",
+    quote: `Scott is an incredible developer who showed leadership and
+            skill on a project we worked on together. Scott always found time to
+            help mentor and teach to the entire team.`,
+    avatar: "/images/rg.jpg",
+  },
+  {
+    name: "Casey Peterson",
+    quote: `Scott was essential in providing Subject Matter Expertise,
+            Lead Technical experience, and continued Mentorship for our team
+            regarding a project that predicts to earn 75M within the next few
+            years. He is extremely knowledgeable in Java, JavaScript, NodeJS,
+            Express and other API service building architecture. Scott is a
+            great colleague and will always strive for success while continuing
+            to put the team's best interests first.`,
+    avatar: "/images/casey.jpg",
+  },
+];

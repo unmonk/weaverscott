@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
       colors: {
         siuPrimary: "#720000",
         mccPrimary: "#4b3190",
@@ -61,6 +64,17 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        fadeInUp: {
+          "0%": {
+            transform: "translateY(100%)",
+            opacity: 0,
+          },
+          "100%": {
+            transform: "translateY(0%)",
+            opacity: 1,
+          },
+        },
+
         "accordion-down": {
           from: { height: 0 },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -115,6 +129,8 @@ module.exports = {
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
+        "fade-in": "fadeInUp 1s  ease-out",
+        "fade-in-faster": "fadeInUp 0.7s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         tada: "tada 1s ease-in-out infinite",
         gradient: "gradient 8s ease infinite",

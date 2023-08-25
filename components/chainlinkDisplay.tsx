@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export async function ChainLinkDisplay() {
   return (
-    <div className="border-black/10 border bg-accent flex flex-col lg:flex-row rounded-xl p-4 lg:h-96 hover:border-white/20 overflow-hidden">
+    <div className="border-black/10 border bg-accent flex flex-col lg:flex-row rounded-xl p-4 lg:h-96 hover:border-white/20 overflow-hidden animate-fade-in-faster">
       <div className="flex flex-col lg:w-1/2 gap-4 p-2">
         <Image
           src="/images/chainlink.svg"
