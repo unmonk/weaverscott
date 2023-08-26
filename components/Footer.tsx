@@ -7,7 +7,7 @@ interface FooterProps {}
 const Footer: FC<FooterProps> = ({}) => {
   return (
     <footer className="flex flex-row justify-between relative items-center w-full p-2 border-t border-t-primary gap-2 bg-background">
-      <div className="absolute inset-x-0 -top-20 h-32 -z-10 bg-gradient-radial from-emerald-300 via-emerald-900 to-background blur-lg opacity-75" />
+      <div className="absolute inset-x-0 -top-20 h-32 -z-10 bg-gradient-radial from-emerald-300 via-emerald-900 to-background blur-lg opacity-75 animate-gradient" />
 
       <div className="justify-start">
         <Image
