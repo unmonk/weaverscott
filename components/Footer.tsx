@@ -13,9 +13,8 @@ const Footer: FC<FooterProps> = ({}) => {
         <Image
           src={"/images/il.svg"}
           alt={"Illustration"}
-          width={60}
-          height={40}
-          className="animate-flag"
+          width={40}
+          height={25}
         />
       </div>
       <div className="flex flex-row gap-2 justify-between items-center">
