@@ -35,7 +35,7 @@ export default function Home() {
                   className="rounded-xl w-24 h-24 dark:bg-black/30 bg-black/80"
                 />
                 <h3 className="text-2xl font-semibold text-left">RightTrack</h3>
-                <p className="text-left text-xs md:text-base">
+                <p className="text-left text-xs flex-1 md:text-base">
                   RightTrack is a program that puts you in control of your auto
                   policy savings by evaluating your safe driving habits.
                 </p>
@@ -55,33 +55,28 @@ export default function Home() {
             <div className="border-black/10 border bg-accent flex flex-col lg:flex-row rounded-xl p-4 lg:h-96 hover:border-white/20 overflow-hidden w-1/2 animate-fade-in">
               <div className="flex flex-col gap-4 p-2">
                 <Image
-                  src="/images/floorplannerpreview.png"
+                  src="/images/olivelogo.webp"
                   width={100}
                   height={100}
-                  alt="FloorPlanner"
+                  alt="Wellforce Covid-19"
                   className="rounded-xl w-24 h-24 dark:bg-black/30 bg-black/80"
                 />
                 <h3 className="text-2xl font-semibold text-left">
-                  FloorPlanner
+                  Covid Testing
                 </h3>
                 <p className="text-left flex-1 text-xs md:text-base">
-                  Drag and drop furniture, build walls and rooms, and save your
-                  plans. Subscribe with Stripe to unlock more save slots.
+                  Built the systems for Tufts Medical Center (Wellforce) to
+                  reduce testing time by 86%, and test 12% of all COVID tests in
+                  the Boston area.
                 </p>
                 <div className="flex flex-col lg:flex-row justify-around gap-4 py-6">
                   <Button asChild>
                     <Link
-                      href="https://github.com/StonefortSolutions/floorplanner"
+                      href="https://hitinfrastructure.com/news/tufts-taps-olives-ai-centers-to-expand-covid-19-testing"
                       target="_blank"
                     >
-                      <Image
-                        src="/icons/github-original.svg"
-                        width={20}
-                        height={20}
-                        alt="Github"
-                        className="mr-2"
-                      />
-                      Repo
+                      <ExternalLinkIcon size={20} className="mr-2" />
+                      Learn More
                     </Link>
                   </Button>
                 </div>
