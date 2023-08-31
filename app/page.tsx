@@ -1,3 +1,4 @@
+"use client";
 import About from "@/components/about";
 import Header from "@/components/header";
 import Image from "next/image";
@@ -7,8 +8,28 @@ import { ExternalLinkIcon } from "lucide-react";
 import Link from "next/link";
 import Testimonials from "@/components/testimonials";
 import { testimonials } from "@/lib/consts";
+import { useEffect, useState } from "react";
 
-export default function Home() {
+export default async function Home() {
+  useEffect(() => {
+    async function runOneSignal() {
+      const OneSignal = (await import("react-onesignal")).default;
+      OneSignal.Debug.setLogLevel("VERBOSE");
+
+      await OneSignal.init({
+        appId: "d193143b-872b-4f37-b713-06e2d5558f65",
+        allowLocalhostAsSecureOrigin: true,
+        notifyButton: {
+          enable: true,
+        },
+      });
+      OneSignal.Slidedown.promptPush();
+      OneSignal.User.addTag("hello", "world");
+      console.log(OneSignal.Notifications.isPushSupported());
+    }
+    runOneSignal();
+  }, []);
+
   return (
     <div className="flex flex-col items-center text-center flex-1 xl:self-center xl:w-3/4 p-4 gap-6 mt-8">
       <Header />
